@@ -1,5 +1,7 @@
 import React from "react";
 
+import { AiFillTrophy } from "react-icons/ai";
+
 import {
   Table,
   TableBody,
@@ -37,6 +39,19 @@ async function TablePositions() {
       };
     });
 
+  //Agregar iconos a los podios
+  function podioIcon(index) {
+    if (index === 0) {
+      return (index = "🥇");
+    } else if (index === 1) {
+      return (index = "🥈");
+    } else if (index === 2) {
+      return (index = "🥉");
+    } else {
+      return (index += 1);
+    }
+  }
+
   // Ordenar por tiempo en segundos
   fecha1.sort((a, b) => a.timeInSeconds - b.timeInSeconds);
 
@@ -50,17 +65,18 @@ async function TablePositions() {
           </TableCaption>
           <TableHeader>
             <TableRow>
-              <TableHead>P</TableHead>
+              <TableHead></TableHead>
               <TableHead>Nombre</TableHead>
-              <TableHead>Edad</TableHead>
+              <TableHead>Categoría</TableHead>
               <TableHead>Tiempo</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
             {fecha1.map((player, index) => (
-              <TableRow key={index}>
-                <TableCell>{index + 1}</TableCell>{" "}
-                {/* Sumar 1 para mostrar la posición */}
+              <TableRow key={index} className="podio">
+                <TableCell className="flex justify-center bg-zinc-900 w-12">
+                  {podioIcon(index)}
+                </TableCell>{" "}
                 <TableCell>{player.names}</TableCell>
                 <TableCell>{player.ages}</TableCell>
                 <TableCell>{player.times}</TableCell>

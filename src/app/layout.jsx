@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`bg-zinc-900 text-white {inter.className}`}>
+      <body className={`bg-zinc-800 text-white {inter.className}`}>
         <Menu />
         {children}
       </body>
