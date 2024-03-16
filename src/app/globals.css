@@ -95,12 +95,12 @@
 }
 
 .podio:nth-child(1) {
-  background: var(--gradient-podio1);
+  background: red;
 }
 
 .podio:nth-child(2) {
-  background: var(--gradient-podio2);
+  background: rgb(147, 0, 0);
 }
 .podio:nth-child(3) {
-  background: var(--gradient-podio3);
+  background: rgb(56, 0, 0);
 }

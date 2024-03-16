@@ -57,8 +57,9 @@ async function TablePositions() {
 
   return (
     <main>
-      <section className=" p-4">
-        <h1>TABLA</h1>
+      <section className="p-4 ms-auto me-auto">
+        <h1 className="text-2xl">POSICIONES</h1>
+        <h2 className="text-xl">FECHA 1 GENERAL</h2>
         <Table>
           <TableCaption>
             Posiciones de la 1a. fecha del Campeonato Salto Run.
