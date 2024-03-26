@@ -22,6 +22,7 @@ function Menu() {
       <div className=" pt-10">
         <Link href="/">
           <Image
+            className=" w-auto h-auto"
             src="/saltorun24.png"
             alt=""
             width={100}

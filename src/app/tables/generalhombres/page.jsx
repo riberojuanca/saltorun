@@ -1,5 +1,16 @@
 import React from "react";
 import { AiFillTrophy } from "react-icons/ai";
+import GeneralHombres20 from "@/components/GeneralHombres20";
+import GeneralHombres20a24 from "@/components/GeneralHombres20a24";
+import GeneralHombres25a29 from "@/components/GeneralHombres25a29";
+import GeneralHombres30a34 from "@/components/GeneralHombres30a34";
+import GeneralHombres35a39 from "@/components/GeneralHombres35a39";
+import GeneralHombres40a44 from "@/components/GeneralHombres40a44";
+import GeneralHombres45a49 from "@/components/GeneralHombres45a49";
+import GeneralHombres50a54 from "@/components/GeneralHombres50a54";
+import GeneralHombres55a59 from "@/components/GeneralHombres55a59";
+import GeneralHombresEspeciales from "@/components/GeneralHombresEspeciales";
+import GeneralHombresMayores59 from "@/components/GeneralHombresMayores59";
 
 import {
   Table,
@@ -54,7 +65,7 @@ async function GeneralHombres() {
   }
 
   // Ordenar por tiempo en segundos
-  generalHombres.sort((a, b) => a.totalPoints + b.totalPoints);
+  generalHombres.sort((a, b) => b.totalPoints - a.totalPoints);
 
   return (
     <main>
@@ -89,6 +100,17 @@ async function GeneralHombres() {
           </TableBody>
         </Table>
       </section>
+      <GeneralHombres20 />
+      <GeneralHombres20a24 />
+      <GeneralHombres25a29 />
+      <GeneralHombres30a34 />
+      <GeneralHombres35a39 />
+      <GeneralHombres40a44 />
+      <GeneralHombres45a49 />
+      <GeneralHombres50a54 />
+      <GeneralHombres55a59 />
+      <GeneralHombresEspeciales />
+      <GeneralHombresMayores59 />
     </main>
   );
 }

@@ -54,7 +54,7 @@ async function GeneralMujeres() {
   }
 
   // Ordenar por tiempo en segundos
-  generalMujeres.sort((a, b) => a.totalPoints + b.totalPoints);
+  generalMujeres.sort((a, b) => b.totalPoints - a.totalPoints);
 
   return (
     <main>
