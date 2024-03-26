@@ -91,6 +91,7 @@
   }
   body {
     box-sizing: border-box;
+    width: 100%;
     max-width: 40rem;
     margin-inline: auto auto;
     @apply bg-background text-foreground;
