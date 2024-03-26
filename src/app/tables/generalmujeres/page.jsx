@@ -1,5 +1,4 @@
 import React from "react";
-
 import { AiFillTrophy } from "react-icons/ai";
 
 import {
@@ -23,7 +22,7 @@ function timeToSeconds(time) {
 
 async function TablePositions() {
   const csv = await fetch(
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQGEd5A_U0S_RKqxMEma5cb2b-ORhup7yRFuCr0buOineP-WuO_3IHhFOoZpwPwZV4XFDO67LMK3Kx5/pub?output=tsv"
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vSDU5wnysIhArsJeWs5p1wQOfRBZbD-vCfR8LX0hASFE0e33uvnyBBFNsuXG8ueAyXsSpdcC95blH7d/pub?output=tsv"
   ).then((res) => res.text());
 
   const fecha1 = csv
@@ -59,7 +58,7 @@ async function TablePositions() {
     <main>
       <section className="p-4 ms-auto me-auto">
         <h1 className="text-2xl">POSICIONES</h1>
-        <h2 className="text-xl">FECHA 1 GENERAL</h2>
+        <h2 className="text-xl">GENERAL MUJERES</h2>
         <Table>
           <TableCaption>
             Posiciones de la 1a. fecha del Campeonato Salto Run.
@@ -74,7 +73,7 @@ async function TablePositions() {
           </TableHeader>
           <TableBody>
             {fecha1.map((player, index) => (
-              <TableRow key={index} className="podio">
+              <TableRow key={index} className="podioGeneralMujeres">
                 <TableCell className="flex justify-center bg-zinc-900 w-12">
                   {podioIcon(index)}
                 </TableCell>{" "}

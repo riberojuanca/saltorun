@@ -94,13 +94,24 @@
   }
 }
 
-.podio:nth-child(1) {
+.podioGeneralHombres:nth-child(1) {
   background: red;
 }
 
-.podio:nth-child(2) {
+.podioGeneralHombres:nth-child(2) {
   background: rgb(147, 0, 0);
 }
-.podio:nth-child(3) {
+.podioGeneralHombres:nth-child(3) {
   background: rgb(56, 0, 0);
+}
+
+.podioGeneralMujeres:nth-child(1) {
+  background: rgb(196, 1, 196);
+}
+
+.podioGeneralMujeres:nth-child(2) {
+  background: purple;
+}
+.podioGeneralMujeres:nth-child(3) {
+  background: rgb(80, 0, 80);
 }
