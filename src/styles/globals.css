@@ -90,6 +90,9 @@
     @apply border-border;
   }
   body {
+    box-sizing: border-box;
+    max-width: 40rem;
+    margin-inline: auto auto;
     @apply bg-background text-foreground;
   }
 }
