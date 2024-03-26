@@ -22,19 +22,20 @@ function timeToSeconds(time) {
 
 async function Fecha1() {
   const csv = await fetch(
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQGEd5A_U0S_RKqxMEma5cb2b-ORhup7yRFuCr0buOineP-WuO_3IHhFOoZpwPwZV4XFDO67LMK3Kx5/pub?output=tsv"
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vSZFZjXCkMI6mYIOyh-MYaGVMEYwp7AtwOH08isxhDobyT-yvWW9X67a-VyAxx1KtNoPBx53KniGhoX/pub?output=tsv"
   ).then((res) => res.text());
 
   const fecha1 = csv
     .split("\n")
     .slice(1)
     .map((row) => {
-      const [names, ages, times] = row.split("\t");
+      const [names, ages, times, points] = row.split("\t");
       return {
         names,
         ages,
         times,
-        timeInSeconds: timeToSeconds(times), // Convertir el tiempo a segundos
+        timeInSeconds: timeToSeconds(times),
+        points, // Convertir el tiempo a segundos
       };
     });
 
@@ -52,7 +53,7 @@ async function Fecha1() {
   }
 
   // Ordenar por tiempo en segundos
-  fecha1.sort((a, b) => a.timeInSeconds - b.timeInSeconds);
+  fecha1.sort((a, b) => a.points + b.points);
 
   return (
     <main>
@@ -68,7 +69,8 @@ async function Fecha1() {
               <TableHead></TableHead>
               <TableHead>Nombre</TableHead>
               <TableHead>Categoría</TableHead>
-              <TableHead>Tiempo</TableHead>
+              {/* <TableHead>Tiempo</TableHead> */}
+              <TableHead>Puntos</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -79,7 +81,8 @@ async function Fecha1() {
                 </TableCell>{" "}
                 <TableCell>{player.names}</TableCell>
                 <TableCell>{player.ages}</TableCell>
-                <TableCell>{player.times}</TableCell>
+                {/* <TableCell>{player.times}</TableCell> */}
+                <TableCell>{player.points}</TableCell>
               </TableRow>
             ))}
           </TableBody>

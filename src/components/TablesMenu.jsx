@@ -11,7 +11,7 @@ import Link from "next/link";
 function TablesMenu() {
   return (
     <div className=" mb-10 bg-zinc-900 opacity-80 text-white flex items-center justify-between h-14 px-6">
-      <ul className="flex gap-3 text-l">
+      <ul className="flex gap-3 text-xs">
         <li>
           <a href="/tables/generalmujeres">GENERAL MUJERES</a>
         </li>

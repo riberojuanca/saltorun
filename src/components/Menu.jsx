@@ -13,10 +13,10 @@ function Menu() {
     <nav className=" mb-10 bg-zinc-900 opacity-80 text-white flex items-center justify-between h-14 px-6">
       <ul className="flex gap-6 text-l">
         <li>
-          <a href="/noticias">Noticias</a>
+          <a href="/noticias">📰</a>
         </li>
         <li>
-          <a href="/tables">POSICIONES</a>
+          <a href="/tables">🏆</a>
         </li>
       </ul>
       <div className=" pt-10">

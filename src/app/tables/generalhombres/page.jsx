@@ -20,21 +20,23 @@ function timeToSeconds(time) {
   return hours + minutes + seconds;
 }
 
-async function TablePositions() {
+async function GeneralHombres() {
   const csv = await fetch(
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vQGEd5A_U0S_RKqxMEma5cb2b-ORhup7yRFuCr0buOineP-WuO_3IHhFOoZpwPwZV4XFDO67LMK3Kx5/pub?output=tsv"
   ).then((res) => res.text());
 
-  const fecha1 = csv
+  const generalHombres = csv
     .split("\n")
     .slice(1)
     .map((row) => {
-      const [names, ages, times] = row.split("\t");
+      const [names, ages, totalPoints] = row.split("\t");
+
       return {
         names,
         ages,
-        times,
-        timeInSeconds: timeToSeconds(times), // Convertir el tiempo a segundos
+        // times,
+        // timeInSeconds: timeToSeconds(times), // Convertir el tiempo a segundos
+        totalPoints,
       };
     });
 
@@ -52,7 +54,7 @@ async function TablePositions() {
   }
 
   // Ordenar por tiempo en segundos
-  fecha1.sort((a, b) => a.timeInSeconds - b.timeInSeconds);
+  generalHombres.sort((a, b) => a.totalPoints + b.totalPoints);
 
   return (
     <main>
@@ -68,18 +70,20 @@ async function TablePositions() {
               <TableHead></TableHead>
               <TableHead>Nombre</TableHead>
               <TableHead>Categoría</TableHead>
-              <TableHead>Tiempo</TableHead>
+              <TableHead>Puntos</TableHead>
+              {/* <TableHead>Tiempo</TableHead> */}
             </TableRow>
           </TableHeader>
           <TableBody>
-            {fecha1.map((player, index) => (
+            {generalHombres.map((player, index) => (
               <TableRow key={index} className="podioGeneralHombres">
                 <TableCell className="flex justify-center bg-zinc-900 w-12">
                   {podioIcon(index)}
                 </TableCell>{" "}
                 <TableCell>{player.names}</TableCell>
                 <TableCell>{player.ages}</TableCell>
-                <TableCell>{player.times}</TableCell>
+                <TableCell>{player.totalPoints}</TableCell>
+                {/* <TableCell>{player.times}</TableCell> */}
               </TableRow>
             ))}
           </TableBody>
@@ -89,4 +93,4 @@ async function TablePositions() {
   );
 }
 
-export default TablePositions;
+export default GeneralHombres;

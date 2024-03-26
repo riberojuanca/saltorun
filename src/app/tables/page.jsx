@@ -1,6 +1,9 @@
 import TablePositions from "./generalhombres/page";
 function tables() {
-  return <div>PAGINA DE INICIO DE TABLES</div>;
+  return;
+  <body>
+    <div>PAGINA DE INICIO DE TABLES</div>;
+  </body>;
 }
 
 export default tables;
