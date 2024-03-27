@@ -20,12 +20,12 @@ function timeToSeconds(time) {
   return hours + minutes + seconds;
 }
 
-async function GeneralHombresMayores59() {
+async function GeneralMujeres30a34() {
   const csv = await fetch(
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vRcmt2a4WGMKc1YAk5IsUIMtIOSHUUFO91Tq0pMb7gwcNYkUHynothpF-xXYH_oRUBz_57Yody6u6rS/pub?output=tsv"
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vRf6jZbLJRUUzpFjGuF_tHctXN40oJmAvg7-sb5xEC3BxQo272XF3WUvQjWpbOUnQWqRS4gbCa_lkpj/pub?output=tsv"
   ).then((res) => res.text());
 
-  const generalHombresMayores59 = csv
+  const generalMujeres30a34 = csv
     .split("\n")
     .slice(1)
     .map((row) => {
@@ -54,12 +54,12 @@ async function GeneralHombresMayores59() {
   }
 
   // Ordenar por tiempo en segundos
-  generalHombresMayores59.sort((a, b) => b.totalPoints - a.totalPoints);
+  generalMujeres30a34.sort((a, b) => b.totalPoints - a.totalPoints);
 
   return (
     <section className="p-4 ms-auto me-auto">
       <h1 className="text-2xl">POSICIONES</h1>
-      <h2 className="text-xl">GENERAL HOMBRES MAYORES a 59</h2>
+      <h2 className="text-xl">GENERAL MUJERES 30 A 34</h2>
       <Table>
         <TableHeader>
           <TableRow>
@@ -71,8 +71,8 @@ async function GeneralHombresMayores59() {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {generalHombresMayores59.map((player, index) => (
-            <TableRow key={index} className="podioGeneralHombres">
+          {generalMujeres30a34.map((player, index) => (
+            <TableRow key={index} className="podioGeneralMujeres">
               <TableCell className="flex justify-center bg-zinc-900 w-12">
                 {podioIcon(index)}
               </TableCell>{" "}
@@ -88,4 +88,4 @@ async function GeneralHombresMayores59() {
   );
 }
 
-export default GeneralHombresMayores59;
+export default GeneralMujeres30a34;
