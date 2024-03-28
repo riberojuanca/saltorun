@@ -59,8 +59,11 @@ async function GeneralHombresMayores59() {
   return (
     <section className="p-4 ms-auto me-auto">
       <h1 className="text-2xl">POSICIONES</h1>
-      <h2 className="text-xl">GENERAL HOMBRES MAYORES a 59</h2>
+      <h2 className="text-xl">GENERAL HOMBRES MAYORES DE 59</h2>
       <Table>
+        <TableCaption>
+          Posiciones tabla general hombres mayores de 59 años
+        </TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead></TableHead>

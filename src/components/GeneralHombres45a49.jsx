@@ -62,7 +62,7 @@ async function GeneralHombres45a49() {
       <h2 className="text-xl">GENERAL HOMBRES 45 a 49</h2>
       <Table>
         <TableCaption>
-          Posiciones de la 1a. fecha del Campeonato Salto Run.
+          Posiciones tabla general hombres de 45 a 49 años
         </TableCaption>
         <TableHeader>
           <TableRow>

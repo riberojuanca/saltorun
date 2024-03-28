@@ -61,9 +61,7 @@ async function GeneralHombresEspeciales() {
       <h1 className="text-2xl">POSICIONES</h1>
       <h2 className="text-xl">GENERAL HOMBRES ESPECIALES</h2>
       <Table>
-        <TableCaption>
-          Posiciones de la 1a. fecha del Campeonato Salto Run.
-        </TableCaption>
+        <TableCaption>Posiciones tabla general hombres especiales</TableCaption>
         <TableHeader>
           <TableRow>
             <TableHead></TableHead>

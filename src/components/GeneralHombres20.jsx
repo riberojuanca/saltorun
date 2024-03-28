@@ -62,7 +62,7 @@ async function GeneralHombres20() {
       <h2 className="text-xl">GENERAL HOMBRES MENORES A 20</h2>
       <Table>
         <TableCaption>
-          Posiciones de la 1a. fecha del Campeonato Salto Run.
+          Posiciones tabla general hombres menores a 20 años
         </TableCaption>
         <TableHeader>
           <TableRow>
