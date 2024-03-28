@@ -136,6 +136,10 @@
   box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.276);
 }
 
+.ulMenu > * {
+  border-radius: 2px;
+}
+
 .ulMenuMujeres li {
   background-color: #000000b1;
   padding: 0.5rem;
@@ -144,13 +148,17 @@
   box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.276);
 }
 
+.ulMenuMujeres > * {
+  border-radius: 2px;
+}
+
 @media screen and (min-width: 1080px) {
   .categoriesMenu {
     height: fit-content;
   }
 
   .ulMenu {
-    grid-template-columns: repeat(11, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     gap: 0.5rem;
   }
 
@@ -163,7 +171,7 @@
   }
 
   .ulMenuMujeres {
-    grid-template-columns: repeat(11, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     gap: 0.5rem;
   }
 

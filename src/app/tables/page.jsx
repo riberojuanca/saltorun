@@ -1,4 +1,4 @@
-import TablePositions from "./generalhombres/page";
+import TablePositions from "./hombres/page";
 function tables() {
   return (
     <section className=" h-screen ms-auto me-auto max-w-3xl">
