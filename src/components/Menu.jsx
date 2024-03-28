@@ -10,7 +10,7 @@ import Link from "next/link";
 
 function Menu() {
   return (
-    <nav className=" mb-10 bg-zinc-900 opacity-80 text-white flex items-center justify-between h-14 px-6">
+    <nav className=" w-full  mb-10 bg-zinc-900 opacity-80 text-white flex items-center justify-between h-14 px-6">
       <ul className="flex gap-6 text-l">
         <li>
           <a href="/noticias">📰</a>

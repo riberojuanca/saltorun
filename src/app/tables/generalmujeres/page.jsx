@@ -57,7 +57,7 @@ async function GeneralMujeres() {
   generalMujeres.sort((a, b) => b.totalPoints - a.totalPoints);
 
   return (
-    <main>
+    <main className="ms-auto me-auto max-w-5xl">
       <section className="p-4 ms-auto me-auto">
         <h1 className="text-2xl">POSICIONES</h1>
         <h2 className="text-xl">GENERAL MUJERES</h2>

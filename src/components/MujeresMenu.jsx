@@ -3,7 +3,7 @@ import React from "react";
 function MujeresMenu() {
   return (
     <>
-      <div className=" bg-fuchsia-700 opacity-80 text-white flex flex-row items-center justify-between h-fit px-6">
+      <div className="ms-auto me-auto max-w-5xl bg-fuchsia-700 opacity-80 text-white flex flex-row items-center justify-between h-fit px-6">
         <ul className="flex flex-col gap-2 text-m">
           <li>
             <a href="/tables/generalmujeres/GeneralMujeres20">MENORES A 20</a>

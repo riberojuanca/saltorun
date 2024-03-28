@@ -10,7 +10,9 @@ export const metadata = {
 
 export default function TablesLayout({ children }) {
   return (
-    <article className={`bg-zinc-600 text-white {inter.className}`}>
+    <article
+      className={`ms-auto me-auto max-w-5xl  text-white {inter.className}`}
+    >
       <TablesMenu />
       {children}
     </article>

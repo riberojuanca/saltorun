@@ -1,9 +1,10 @@
 import TablePositions from "./generalhombres/page";
 function tables() {
-  return;
-  <body>
-    <div>PAGINA DE INICIO DE TABLES</div>;
-  </body>;
+  return (
+    <section className=" h-screen ms-auto me-auto max-w-3xl">
+      <div>PAGINA DE INICIO DE TABLES</div>;
+    </section>
+  );
 }
 
 export default tables;

@@ -78,7 +78,7 @@ async function GeneralHombres50a54() {
             <TableRow key={index} className="podioGeneralHombres">
               <TableCell className="flex justify-center bg-zinc-900 w-12">
                 {podioIcon(index)}
-              </TableCell>{" "}
+              </TableCell>
               <TableCell>{player.names}</TableCell>
               <TableCell>{player.ages}</TableCell>
               <TableCell>{player.totalPoints}</TableCell>
