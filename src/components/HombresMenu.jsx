@@ -2,14 +2,13 @@
 import React from "react";
 import Link from "next/link";
 import "@/styles/globals.css";
-import { useEffect } from "react";
 
 function handleClick(e) {
   const links = document.querySelectorAll(".link");
   for (const link of links) {
     link.style.backgroundColor = "";
   }
-  e.target.style.backgroundColor = "red";
+  e.target.style.background = "red";
 }
 
 function HombresMenu() {

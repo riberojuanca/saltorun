@@ -132,12 +132,16 @@
   background-color: #000000b1;
   padding: 0.5rem;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 2px;
   box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.276);
 }
 
-.ulMenu li:focus {
-  background-color: blue;
+.ulMenuMujeres li {
+  background-color: #000000b1;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.276);
 }
 
 @media screen and (min-width: 1080px) {
@@ -151,10 +155,19 @@
   }
 
   .ulMenu li:hover {
-    background-color: red;
+    background-color: rgb(147, 0, 0);
   }
-}
 
-.active li {
-  background-color: red;
+  .categoriesMenuMujeres {
+    height: fit-content;
+  }
+
+  .ulMenuMujeres {
+    grid-template-columns: repeat(11, 1fr);
+    gap: 0.5rem;
+  }
+
+  .ulMenuMujeres li:hover {
+    background-color: purple;
+  }
 }

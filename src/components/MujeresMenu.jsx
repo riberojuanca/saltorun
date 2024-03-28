@@ -1,47 +1,75 @@
+"use client";
 import React from "react";
+import Link from "next/link";
+
+function handleClick(e) {
+  const links = document.querySelectorAll(".link");
+  for (const link of links) {
+    link.style.backgroundColor = "";
+  }
+  e.target.style.background = "rgb(196, 1, 196)";
+}
 
 function MujeresMenu() {
   return (
     <>
-      <div className="ms-auto me-auto max-w-5xl bg-fuchsia-700 opacity-80 text-white flex flex-row items-center justify-between h-fit px-6">
-        <ul className="flex flex-col gap-2 text-m">
-          <li>
-            <a href="/tables/generalmujeres/GeneralMujeres20">MENORES A 20</a>
-          </li>
-          <li>
-            <a href="/tables/generalmujeres/GeneralMujeres20a24">20 A 24</a>
-          </li>
-          <li>
-            <a href="/tables/generalmujeres/GeneralMujeres25a29">25 A 29</a>
-          </li>
-          <li>
-            <a href="/tables/generalmujeres/GeneralMujeres30a34">30 A 34</a>
-          </li>
-          <li>
-            <a href="/tables/generalmujeres/GeneralMujeres35a39">35 A 39</a>
-          </li>
-          <li>
-            <a href="/tables/generalmujeres/GeneralMujeres40a44">40 A 44</a>
-          </li>
-          <li>
-            <a href="/tables/generalmujeres/GeneralMujeres45a49">45 A 49</a>
-          </li>
-          <li>
-            <a href="/tables/generalmujeres/GeneralMujeres50a54">50 A 54</a>
-          </li>
-          <li>
-            <a href="/tables/generalmujeres/GeneralMujeres55a59">55 A 59</a>
-          </li>
-          <li>
-            <a href="/tables/generalmujeres/GeneralMujeresMayores59">
-              MAYORES A 59
-            </a>
-          </li>
-          <li>
-            <a href="/tables/generalmujeres/GeneralMujeresEspeciales">
+      <div className="  categoriesMenuMujeres ms-auto me-auto max-w-5xl h-40 mb-5  opacity-80 text-white flex items-center justify-center px-6">
+        <ul className="ulMenuMujeres w-full grid grid-cols-3 gap-5 text-xs">
+          <Link href="/tables/generalmujeres/GeneralMujeres20">
+            <li className="link" onClick={handleClick}>
+              &lt; 20
+            </li>
+          </Link>
+          <Link href="/tables/generalmujeres/GeneralMujeres20a24">
+            <li className="link" onClick={handleClick}>
+              20 a 24
+            </li>
+          </Link>
+          <Link href="/tables/generalmujeres/GeneralMujeres25a29">
+            <li className="link" onClick={handleClick}>
+              25 A 29
+            </li>
+          </Link>
+          <Link href="/tables/generalmujeres/GeneralMujeres30a34">
+            <li className="link" onClick={handleClick}>
+              30 A 34
+            </li>
+          </Link>
+          <Link href="/tables/generalmujeres/GeneralMujeres35a39">
+            <li className="link" onClick={handleClick}>
+              35 A 39
+            </li>
+          </Link>
+          <Link href="/tables/generalmujeres/GeneralMujeres40a44">
+            <li className="link" onClick={handleClick}>
+              40 A 44
+            </li>
+          </Link>
+          <Link href="/tables/generalmujeres/GeneralMujeres45a49">
+            <li className="link" onClick={handleClick}>
+              45 A 49
+            </li>
+          </Link>
+          <Link href="/tables/generalmujeres/GeneralMujeres50a54">
+            <li className="link" onClick={handleClick}>
+              50 A 54
+            </li>
+          </Link>
+          <Link href="/tables/generalmujeres/GeneralMujeres55a59">
+            <li className="link" onClick={handleClick}>
+              55 A 59
+            </li>
+          </Link>
+          <Link href="/tables/generalmujeres/GeneralMujeresMayores59">
+            <li className="link" onClick={handleClick}>
+              &gt; 59
+            </li>
+          </Link>
+          <Link href="/tables/generalmujeres/GeneralMujeresEspeciales">
+            <li className="link" onClick={handleClick}>
               ESPECIALES
-            </a>
-          </li>
+            </li>
+          </Link>
         </ul>
       </div>
     </>

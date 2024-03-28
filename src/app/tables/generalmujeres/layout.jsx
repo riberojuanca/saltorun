@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function HombresLayout({ children }) {
   return (
-    <article className={`bg-zinc-600 text-white {inter.className}`}>
+    <article className={` text-white {inter.className}`}>
       <MujeresMenu />
       {children}
     </article>
