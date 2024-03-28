@@ -3,7 +3,10 @@ import { Inter } from "next/font/google";
 // import "./globals.css";
 import Menu from "@/components/Menu";
 
-const inter = Inter({ subsets: ["latin"] });
+export const inter = Inter({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600"],
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`bg-zinc-800 text-white {inter.className}`}>
+      <body className={`bg-zinc-800 text-white ${inter.className}`}>
         <Menu />
         {children}
       </body>
