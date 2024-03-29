@@ -1,8 +1,9 @@
-import TablePositions from "./hombres/page";
+import Link from "next/link";
+
 function tables() {
   return (
-    <section className=" h-screen ms-auto me-auto max-w-3xl">
-      <div>PAGINA DE INICIO DE TABLES</div>;
+    <section className=" p-6 h-screen ms-auto me-auto max-w-3xl">
+      <h1>PAGINA DE INICIO DE TABLES</h1>
     </section>
   );
 }

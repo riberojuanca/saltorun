@@ -57,19 +57,18 @@ async function GeneralHombres() {
   generalHombres.sort((a, b) => b.totalPoints - a.totalPoints);
 
   return (
-    <main className="ms-auto me-auto max-w-5xl">
+    <main className="ms-auto me-auto max-w-5xl mt-8 mb-8">
       <section className="p-4 ms-auto me-auto">
-        <h1 className="text-2xl">POSICIONES</h1>
-        <h2 className="text-xl">GENERAL HOMBRES</h2>
+        <div className=" flex items-center justify-between text-center px-4 w-fit text-lg gap-4 me-auto ms-auto">
+          <h1 className="">POSICIONES HOMBRES GENERAL</h1>
+        </div>
         <Table>
-          <TableCaption>
-            Posiciones de la 1a. fecha del Campeonato Salto Run.
-          </TableCaption>
+          <TableCaption>Campeonato Salto Run 2024</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead></TableHead>
               <TableHead>Nombre</TableHead>
-              <TableHead>Categoría</TableHead>
+              {/* <TableHead>Categoría</TableHead> */}
               <TableHead>Puntos</TableHead>
               {/* <TableHead>Tiempo</TableHead> */}
             </TableRow>
@@ -81,7 +80,7 @@ async function GeneralHombres() {
                   {podioIcon(index)}
                 </TableCell>
                 <TableCell>{player.names}</TableCell>
-                <TableCell>{player.ages}</TableCell>
+                {/* <TableCell>{player.ages}</TableCell> */}
                 <TableCell>{player.totalPoints}</TableCell>
                 {/* <TableCell>{player.times}</TableCell> */}
               </TableRow>

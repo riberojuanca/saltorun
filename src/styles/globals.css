@@ -100,6 +100,7 @@
     line-height: inherit;
     display: block;
     margin-inline: auto;
+    margin-top: 6rem;
     /* overflow-x: hidden; */
     font-size: 16px;
     @apply bg-background text-foreground;

@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import "@/styles/globals.css";
+import { FaMale } from "react-icons/fa";
 
 function handleClick(e) {
   const links = document.querySelectorAll(".link");
@@ -15,9 +16,10 @@ function HombresMenu() {
   return (
     <>
       <section>
-        <h1 className=" text-center p-4 w-full text-3xl me-auto ms-auto">
-          TABLA GENERAL HOMBRES EN CADA UNA DE SUS CATEGORÍAS
-        </h1>
+        <div className=" flex items-center justify-between text-center p-4 mb-6 w-fit text-lg gap-4 me-auto ms-auto">
+          <FaMale className="text-2xl " />
+          <h1 className="">GENERAL POR CATEGORÍA</h1>
+        </div>
         <div className="  categoriesMenu ms-auto me-auto max-w-5xl h-40 mb-5  opacity-80 text-white flex items-center justify-center px-6">
           <ul className="ulMenu w-full grid grid-cols-3 gap-5 text-xs">
             <Link href="/tables/hombres/GeneralHombres">

@@ -57,37 +57,38 @@ async function GeneralHombres35a39() {
   generalHombres35a39.sort((a, b) => b.totalPoints - a.totalPoints);
 
   return (
-    <section className="p-4 ms-auto me-auto">
-      <h1 className="text-2xl">POSICIONES</h1>
-      <h2 className="text-xl">GENERAL HOMBRES 35 a 39</h2>
-      <Table>
-        <TableCaption>
-        Posiciones tabla general hombres de 35 a 39 años
-        </TableCaption>
-        <TableHeader>
-          <TableRow>
-            <TableHead></TableHead>
-            <TableHead>Nombre</TableHead>
-            <TableHead>Categoría</TableHead>
-            <TableHead>Puntos</TableHead>
-            {/* <TableHead>Tiempo</TableHead> */}
-          </TableRow>
-        </TableHeader>
-        <TableBody>
-          {generalHombres35a39.map((player, index) => (
-            <TableRow key={index} className="podioGeneralHombres">
-              <TableCell className="flex justify-center bg-zinc-900 w-12">
-                {podioIcon(index)}
-              </TableCell>
-              <TableCell>{player.names}</TableCell>
-              <TableCell>{player.ages}</TableCell>
-              <TableCell>{player.totalPoints}</TableCell>
-              {/* <TableCell>{player.times}</TableCell> */}
+    <main className="ms-auto me-auto max-w-5xl mt-8 mb-8">
+      <section className="p-4 ms-auto me-auto">
+        <div className=" flex items-center justify-between text-center px-4 w-fit text-lg gap-4 me-auto ms-auto">
+          <h1 className="">POSICIONES HOMBRES 35 A 39</h1>
+        </div>
+        <Table>
+          <TableCaption>Campeonato Salto Run 2024</TableCaption>
+          <TableHeader>
+            <TableRow>
+              <TableHead></TableHead>
+              <TableHead>Nombre</TableHead>
+              {/* <TableHead>Categoría</TableHead> */}
+              <TableHead>Puntos</TableHead>
+              {/* <TableHead>Tiempo</TableHead> */}
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </section>
+          </TableHeader>
+          <TableBody>
+            {generalHombres35a39.map((player, index) => (
+              <TableRow key={index} className="podioGeneralHombres">
+                <TableCell className="flex justify-center bg-zinc-900 w-12">
+                  {podioIcon(index)}
+                </TableCell>
+                <TableCell>{player.names}</TableCell>
+                {/* <TableCell>{player.ages}</TableCell> */}
+                <TableCell>{player.totalPoints}</TableCell>
+                {/* <TableCell>{player.times}</TableCell> */}
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </section>
+    </main>
   );
 }
 

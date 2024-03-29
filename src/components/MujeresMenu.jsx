@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import { FaFemale } from "react-icons/fa";
 
 function handleClick(e) {
   const links = document.querySelectorAll(".link");
@@ -14,9 +15,10 @@ function MujeresMenu() {
   return (
     <>
       <section>
-        <h1 className=" container text-center p-4  text-3xl my-4">
-          TABLA GENERAL MUJERES EN CADA UNA DE SUS CATEGORÍAS
-        </h1>
+        <div className=" flex items-center justify-between text-center p-4 mb-6 w-fit text-lg gap-4 me-auto ms-auto">
+          <FaFemale className="text-2xl " />
+          <h1 className="">GENERAL POR CATEGORÍA</h1>
+        </div>
         <div className="  categoriesMenuMujeres ms-auto me-auto max-w-5xl h-40 mb-5  opacity-80 text-white flex items-center justify-center px-6">
           <ul className="ulMenuMujeres w-full grid grid-cols-3 gap-5 text-xs">
             <Link href="/tables/mujeres/GeneralMujeres">

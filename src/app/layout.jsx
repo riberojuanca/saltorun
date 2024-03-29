@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import { Inter } from "next/font/google";
 // import "./globals.css";
 import Menu from "@/components/Menu";
+import MenuBottom from "@/components/MenuBottom";
 
 export const inter = Inter({
   subsets: ["latin"],
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       <body className={`bg-zinc-800 text-white ${inter.className}`}>
         <Menu />
         {children}
+        {/* <MenuBottom /> */}
       </body>
     </html>
   );

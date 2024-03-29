@@ -2,13 +2,7 @@ import React from "react";
 import GeneralHombresEspeciales from "@/components/GeneralHombresEspeciales";
 
 function PageGeneralHombresEspeciales() {
-  return (
-    <main>
-      <div>
-        <GeneralHombresEspeciales />
-      </div>
-    </main>
-  );
+  return <GeneralHombresEspeciales />;
 }
 
 export default PageGeneralHombresEspeciales;
