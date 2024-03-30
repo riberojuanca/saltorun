@@ -29,11 +29,11 @@ async function GeneralHombres45a49() {
     .split("\n")
     .slice(1)
     .map((row) => {
-      const [names, ages, totalPoints] = row.split("\t");
+      const [names, country, totalPoints] = row.split("\t");
 
       return {
         names,
-        ages,
+        country,
         // times,
         // timeInSeconds: timeToSeconds(times), // Convertir el tiempo a segundos
         totalPoints,
@@ -79,8 +79,9 @@ async function GeneralHombres45a49() {
                 <TableCell className="flex justify-center bg-zinc-900 w-12">
                   {podioIcon(index)}
                 </TableCell>
-                <TableCell>{player.names}</TableCell>
-                {/* <TableCell>{player.ages}</TableCell> */}
+                <TableCell>
+                  {player.country} {player.names}
+                </TableCell>
                 <TableCell>{player.totalPoints}</TableCell>
                 {/* <TableCell>{player.times}</TableCell> */}
               </TableRow>
