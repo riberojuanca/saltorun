@@ -16,7 +16,7 @@ function MujeresMenu() {
   return (
     <>
       <section>
-        <div className=" flex items-center justify-between text-center p-4 w-fit text-lg gap-4 me-auto ms-auto">
+        <div className=" flex items-center justify-between text-center pt-4 px-4 w-fit text-lg  me-auto ms-auto">
           <FaFemale className="text-3xl " />
           <h1 className="text-2xl">MUJERES</h1>
         </div>

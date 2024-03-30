@@ -17,11 +17,11 @@ function HombresMenu() {
   return (
     <>
       <section>
-        <div className=" flex items-center justify-between text-center p-4 w-fit text-lg gap-4 me-auto ms-auto">
+        <div className=" flex items-center justify-between text-center pt-4 px-4 w-fit text-lg  me-auto ms-auto">
           <FaMale className="text-3xl " />
           <h1 className="text-2xl">HOMBRES</h1>
         </div>
-        <div className=" flex items-center justify-between text-center pb-4 mb-6 w-fit text-lg gap-4 me-auto ms-auto">
+        <div className=" flex items-center justify-between text-center pb-4 mb-6 w-fit text-lg me-auto ms-auto">
           <h2 className="">GENERAL Y POR CATEGORÍA</h2>
         </div>
         <div className="  categoriesMenu ms-auto me-auto max-w-5xl h-40 mb-5  opacity-80 text-white flex items-center justify-center px-6">
