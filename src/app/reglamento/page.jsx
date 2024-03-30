@@ -3,8 +3,8 @@ import React from "react";
 function rules() {
   return (
     <main className=" font-light p-6 text-zinc-200 flex flex-col gap-4 ms-auto me-auto max-w-4xl text-lg">
-      <h1 className="mt-6 font-semibold text-3xl">REGLAMENTO</h1>
-      <h2 className="mt-4 font-medium text-xl">ORGANIZADORES:</h2>
+      <h1 className=" mt-6 font-semibold text-4xl">REGLAMENTO</h1>
+      <h2 className="text-sky-800 mt-4 font-medium text-xl">ORGANIZADORES:</h2>
       <p>
         Los organizadores serán grupos de corredores de Salto, mediante una
         COMISION ORGANIZADORA y nucleados con el nombre de SALTO RUN, integrada
@@ -13,7 +13,7 @@ function rules() {
         locales (Intendencia de Salto) para obtener los permisos y
         autorizaciones correspondientes.
       </p>
-      <h2 className="mt-4 font-medium text-xl">JUECES:</h2>
+      <h2 className="text-sky-800 mt-4 font-medium text-xl">JUECES:</h2>
       <p>
         SALTO RUN, definió como autoridades máximas a los JUECES DEL CAMPEONATO.
         Los mismos serán los encargados de la fiscalización y organización
@@ -24,14 +24,18 @@ function rules() {
         <li>JUEZ 1 – Titular: Richard Nessi</li>
         <li>JUEZ 2 – Titular: Martin Peralta</li>
       </ul>
-      <h2 className=" mt-4 font-medium text-xl">FORMATO DEL CAMPEONATO:</h2>
+      <h2 className="text-sky-800 mt-4 font-medium text-xl">
+        FORMATO DEL CAMPEONATO:
+      </h2>
       <p>
         serán 7 fechas, en lugares y fecha a determinar. Las mismas serán
         anunciadas oportunamente. Para competir por los premios se debe
         participar al menos 4 fechas. Todos los participantes que pasen la línea
         de llegada sumarán puntos que se irán acumulando fecha a fecha.
       </p>
-      <h2 className=" mt-4 font-medium text-xl">Puntajes por categoría:</h2>
+      <h2 className="text-sky-800 mt-4 font-medium text-xl">
+        Puntajes por categoría:
+      </h2>
       {/* <ul>
         <li>1º = 30 puntos</li>
         <li>2º = 26 puntos</li>
@@ -75,12 +79,14 @@ function rules() {
         En el campeonato podrán competir atletas locales, de otros departamentos
         y también extranjeros.
       </p>
-      <h2 className=" mt-4 font-medium text-xl">Premiación</h2>
+      <h2 className="text-sky-800 mt-4 font-medium text-xl">Premiación</h2>
       <p>
         serán 21 categorías (damas, hombres y atletas especiales) premiadas del
         1 a 5 en la cada categoría. La premiación será en la última fecha
       </p>
-      <h3 className=" mt-4 font-medium text-lg">También se premiará:</h3>
+      <h3 className="text-sky-900 mt-4 font-medium text-lg">
+        También se premiará:
+      </h3>
       <ol className="px-4">
         <li>
           1) Al campeón y la campeona salteña (aquellos atletas que hayan sumado
@@ -130,7 +136,7 @@ function rules() {
         siguiente: Primero, número de carreras a la que asistió cada corredor.
         Segundo, número de etapas ganadas por cada corredor.
       </p>
-      <h2 className=" mt-4 font-medium text-xl">INSCRIPCIÓN</h2>
+      <h2 className="text-sky-800 mt-4 font-medium text-xl">INSCRIPCIÓN</h2>
       <p>
         La inscripción se hará digitalmente, a través de un formulario web:
         www.saltorun.com
@@ -141,7 +147,9 @@ function rules() {
         departamentos y del exterior).
       </p>
 
-      <h2 className=" mt-4 font-medium text-xl">RETIRO DE NÚMEROS:</h2>
+      <h2 className="text-sky-800 mt-4 font-medium text-xl">
+        RETIRO DE NÚMEROS:
+      </h2>
       <p>
         Los números se podrán levantar en el gimnasio de RICHARD NESSI – Artigas
         2099, en días y horarios a definir (serán comunicados
@@ -149,7 +157,7 @@ function rules() {
         su número, deberá pasar con el ticket de pago para confirmar la
         inscripción correspondiente.
       </p>
-      <h2 className=" mt-4 font-medium text-xl">
+      <h2 className="text-sky-800 mt-4 font-medium text-xl">
         DESLINDE DE RESPONSABILIDAD Y FICHA MÉDICA:
       </h2>
       <p>
@@ -165,7 +173,7 @@ function rules() {
           participar de todas las fechas del mencionado campeonato.
         </strong>
       </p>
-      <h2 className=" mt-4 font-medium text-xl">COSTO:</h2>
+      <h2 className="text-sky-800 mt-4 font-medium text-xl">COSTO:</h2>
       <p>
         Competir en cada fecha tendrá un costo de $ 350 (trescientos cincuenta
         pesos uruguayos) que incluye: derecho a participar, derecho a asistencia
@@ -189,13 +197,13 @@ function rules() {
         acceder a dicho beneficio se deberá abonar el mismo antes del inicio de
         la fecha 1.
       </p>
-      <h2 className=" mt-4 font-medium text-xl">FORMA DE PAGO:</h2>
+      <h2 className="text-sky-800 mt-4 font-medium text-xl">FORMA DE PAGO:</h2>
       <p>
         El pago de la inscripción se hará a través de un colectivo de ABITAB
         (Número 123467 a nombre de Salto Run).
       </p>
 
-      <h2 className=" mt-4 font-medium text-xl">
+      <h2 className="text-sky-800 mt-4 font-medium text-xl">
         COMPETIDORES MENORES DE EDAD:
       </h2>
       <p>
@@ -205,7 +213,7 @@ function rules() {
         responsable por el mismo.
       </p>
 
-      <h2 className=" mt-4 font-medium text-xl">SUSPENSIÓN:</h2>
+      <h2 className="text-sky-800 mt-4 font-medium text-xl">SUSPENSIÓN:</h2>
       <p>
         Se suspenderá alguna fecha únicamente en caso de tormentas eléctricas,
         de ser así la Comisión decidirá si la misma queda sin efecto o
@@ -213,14 +221,14 @@ function rules() {
         que será oportunamente comunicado por nuestras redes sociales.
       </p>
 
-      <h2 className=" mt-4 font-medium text-xl">SORTEOS:</h2>
+      <h2 className="text-sky-800 mt-4 font-medium text-xl">SORTEOS:</h2>
       <p>
         En cada fecha del campeonato la organización sorteará un vale de compra
         en dólares de un lugar y monto a determinar. En la última etapa y como
         cierre del campeonato se sorteará una Moto 0km.
       </p>
 
-      <h3 className=" mt-2 font-medium text-lg">
+      <h3 className="text-sky-900 mt-2 font-medium text-lg">
         Forma de participar en el sorteo:
       </h3>
       <p>
@@ -249,7 +257,9 @@ function rules() {
         normativa de circulación vigente.
       </p>
 
-      <h2 className=" mt-4 font-medium text-xl">NÚMERO DE COMPETIDOR:</h2>
+      <h2 className="text-sky-800 mt-4 font-medium text-xl">
+        NÚMERO DE COMPETIDOR:
+      </h2>
 
       <p className="px-4">
         1. A cada competidor en el momento de la inscripción se le asignará un
@@ -267,8 +277,10 @@ function rules() {
         extraviara el número asignado.
       </p>
 
-      <h2 className=" mt-4 font-medium text-xl">REGLAMENTO DE CARRERA:</h2>
-      <h3 className=" mt-2 font-medium text-lg">Largada:</h3>
+      <h2 className="text-sky-800  mt-4 font-medium text-xl">
+        REGLAMENTO DE CARRERA:
+      </h2>
+      <h3 className="text-sky-900 mt-2 font-medium text-lg">Largada:</h3>
       <p>
         Se largará en grupo, previo a la largada se explicara el recorrido en
         voz alta (también se publicará en redes el mismo en días previos a la
@@ -276,7 +288,9 @@ function rules() {
         bandera.
       </p>
 
-      <h3 className=" mt-4 font-medium text-lg">Desarrollo de la prueba:</h3>
+      <h3 className="text-sky-900 mt-4 font-medium text-lg">
+        Desarrollo de la prueba:
+      </h3>
       <p>
         Habrá puntos de control durante todo el recorrido y jueces móviles
         (bicicleta y/o moto). Cualquier acto de mala fe, cortar camino, lastimar
@@ -285,7 +299,7 @@ function rules() {
         personas externas a la prueba, ya sea corriendo, en bicicleta o en
         cualquier otro medio de locomoción.
       </p>
-      <h3 className=" mt-2 font-medium text-lg">Llegada:</h3>
+      <h3 className="text-sky-900 mt-2 font-medium text-lg">Llegada:</h3>
       <p>
         Se deberá llegar a la meta por el embudo vallado que conducirá al
         competidor a la línea de meta. Cualquier competidor que no cruce la meta
