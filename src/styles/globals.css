@@ -112,6 +112,12 @@
 
 Table {
   pointer-events: none;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.087);
+}
+
+tr {
+  border-color: #282828;
 }
 
 .podioGeneralHombres:nth-child(1) {
