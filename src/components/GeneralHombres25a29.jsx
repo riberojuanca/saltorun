@@ -59,7 +59,7 @@ async function GeneralHombres25a29() {
   return (
     <main className="ms-auto me-auto max-w-5xl mt-8 mb-8">
       <section className="p-4 ms-auto me-auto">
-        <div className=" flex items-center justify-between text-center px-4 w-fit text-lg gap-4 me-auto ms-auto">
+        <div className=" flex items-center justify-between text-center px-4 w-fit text-lg md:text-xl gap-4 me-auto ms-auto">
           <h1 className="">POSICIONES HOMBRES 25 A 29</h1>
         </div>
         <Table>
@@ -69,7 +69,8 @@ async function GeneralHombres25a29() {
               <TableHead></TableHead>
               <TableHead>Nombre</TableHead>
               {/* <TableHead>Categoría</TableHead> */}
-              <TableHead>Puntos</TableHead>
+              <TableHead className="md:max-w-6 text-center">Puntos</TableHead>
+
               {/* <TableHead>Tiempo</TableHead> */}
             </TableRow>
           </TableHeader>
@@ -82,7 +83,9 @@ async function GeneralHombres25a29() {
                 <TableCell>
                   {player.country} {player.names}
                 </TableCell>
-                <TableCell>{player.totalPoints}</TableCell>
+                <TableCell className="text-center">
+                  {player.totalPoints}
+                </TableCell>
                 {/* <TableCell>{player.times}</TableCell> */}
               </TableRow>
             ))}

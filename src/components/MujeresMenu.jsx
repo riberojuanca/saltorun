@@ -17,14 +17,14 @@ function MujeresMenu() {
     <>
       <section>
         <div className=" flex items-center justify-between text-center pt-4 px-4 w-fit text-lg  me-auto ms-auto">
-          <FaFemale className="text-3xl " />
-          <h1 className="text-2xl">MUJERES</h1>
+          <FaFemale className="text-3xl md:text-4xl" />
+          <h1 className="text-2xl md:text-3xl">MUJERES</h1>
         </div>
-        <div className=" flex items-center justify-between text-center pb-4 mb-6 w-fit text-lg gap-4 me-auto ms-auto">
+        <div className=" flex items-center justify-between text-center pb-4 mb-6 w-fit text-lg md:text-xl gap-4 me-auto ms-auto">
           <h2 className="">GENERAL Y POR CATEGORÍA</h2>
         </div>
-        <div className="  categoriesMenuMujeres ms-auto me-auto max-w-5xl h-40 mb-5  opacity-80 text-white flex items-center justify-center px-6">
-          <ul className="ulMenuMujeres w-full grid grid-cols-3 gap-5 text-xs">
+        <div className=" categoriesMenuMujeres ms-auto me-auto max-w-5xl h-40 mb-5  opacity-80 text-white flex items-center justify-center px-6">
+          <ul className="ulMenuMujeres w-full grid grid-cols-3 gap-5 text-xs md:text-sm">
             <Link href="/tables/mujeres/GeneralMujeres">
               <li
                 className=" relative flex justify-center items-center link"
