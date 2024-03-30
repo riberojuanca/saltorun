@@ -3,27 +3,35 @@ import React from "react";
 import Link from "next/link";
 import "@/styles/globals.css";
 import { FaMale } from "react-icons/fa";
+import { GoTrophy } from "react-icons/go";
 
 function handleClick(e) {
   const links = document.querySelectorAll(".link");
   for (const link of links) {
     link.style.backgroundColor = "";
   }
-  e.target.style.background = "red";
+  e.target.style.background = "rgb(147, 0, 0)";
 }
 
 function HombresMenu() {
   return (
     <>
       <section>
-        <div className=" flex items-center justify-between text-center p-4 mb-6 w-fit text-lg gap-4 me-auto ms-auto">
-          <FaMale className="text-2xl " />
-          <h1 className="">GENERAL POR CATEGORÍA</h1>
+        <div className=" flex items-center justify-between text-center p-4 w-fit text-lg gap-4 me-auto ms-auto">
+          <FaMale className="text-3xl " />
+          <h1 className="text-2xl">HOMBRES</h1>
+        </div>
+        <div className=" flex items-center justify-between text-center pb-4 mb-6 w-fit text-lg gap-4 me-auto ms-auto">
+          <h2 className="">GENERAL Y POR CATEGORÍA</h2>
         </div>
         <div className="  categoriesMenu ms-auto me-auto max-w-5xl h-40 mb-5  opacity-80 text-white flex items-center justify-center px-6">
           <ul className="ulMenu w-full grid grid-cols-3 gap-5 text-xs">
             <Link href="/tables/hombres/GeneralHombres">
-              <li className="link" onClick={handleClick}>
+              <li
+                className=" relative flex justify-center items-center link"
+                onClick={handleClick}
+              >
+                <GoTrophy className=" text-xl hombres-trophy rounded-sm p-1 absolute" />
                 GENERAL
               </li>
             </Link>

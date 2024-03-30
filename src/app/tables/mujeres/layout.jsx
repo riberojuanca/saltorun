@@ -1,5 +1,3 @@
-import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
 import "@/styles/globals.css";
 import MujeresMenu from "@/components/MujeresMenu";
 
@@ -10,7 +8,7 @@ export const metadata = {
 
 export default function HombresLayout({ children }) {
   return (
-    <article className={` text-white {inter.className}`}>
+    <article className={` text-white`}>
       <MujeresMenu />
       {children}
     </article>

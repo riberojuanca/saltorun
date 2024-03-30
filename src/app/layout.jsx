@@ -1,12 +1,18 @@
 import "@/styles/globals.css";
-import { Inter } from "next/font/google";
+import { Inter, Atkinson_Hyperlegible } from "next/font/google";
 // import "./globals.css";
 import Menu from "@/components/Menu";
 import MenuBottom from "@/components/MenuBottom";
+import Footer from "@/components/Footer";
 
 export const inter = Inter({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600"],
+});
+
+export const atkinson = Atkinson_Hyperlegible({
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata = {
@@ -16,11 +22,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`bg-zinc-800 text-white ${inter.className}`}>
+    <html className="w-full h-full" lang="es">
+      <body className={` bg-zinc-800 text-white ${atkinson.className}`}>
         <Menu />
         {children}
         {/* <MenuBottom /> */}
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );
