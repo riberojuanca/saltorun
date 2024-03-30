@@ -110,6 +110,10 @@
   }
 }
 
+Table {
+  pointer-events: none;
+}
+
 .podioGeneralHombres:nth-child(1) {
   background: red;
 }
@@ -168,10 +172,6 @@
   pointer-events: none;
   top: -10px;
   right: 6px;
-}
-
-Table:hover {
-  background-color: none;
 }
 
 @media screen and (min-width: 1080px) {
