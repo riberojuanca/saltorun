@@ -15,6 +15,9 @@ function Footer() {
           Inscribirse
         </Link>
         <Link href="/reglamento">Reglamento</Link>
+        <Link href="/deslinde">Deslinde</Link>
+      </article>
+      <article className="text-base flex items-center justify-center gap-4">
         <Link
           href="https://www.instagram.com/saltorun/"
           target="_blank"
