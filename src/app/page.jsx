@@ -1,16 +1,19 @@
 import "@/styles/globals.css";
 import Image from "next/image";
 import Link from "next/link";
+import { BsCalendar4Event } from "react-icons/bs";
+import { CiLocationOn } from "react-icons/ci";
+import { GiPathDistance } from "react-icons/gi";
 
 export default function Home() {
   return (
-    <main className=" w-full ms-auto me-auto">
-      <h1 className="ms-auto me-auto  text-center p-6 font-semibold w-full h-full text-4xl z-40">
-        CAMPEONATO SALTO RUN 2024
+    <main className="w-full ms-auto me-auto">
+      <h1 className="ms-auto me-auto  text-center p-6  font-semibold w-full h-full text-4xl z-40  md:max-w-full xl:text-5xl md:sticky bg-slate-900  top-20">
+        SALTO RUN 2024
       </h1>
-      <div className=" relative w-full h-2/3 top-0">
+      <div className="relative w-full h-full top-0 md:-top-64 xl:-top-80">
         <Image
-          className="w-full"
+          className="w-full md:z-30"
           src={"/portadasaltorundesktop.jpg"}
           alt="Portada Salto Run foto de largada en calle Uruguay"
           width={1920}
@@ -19,10 +22,11 @@ export default function Home() {
         ></Image>
         <div className="absolute top-0 left-0 w-full h-full opacity-60 bg-neutral-950 backdrop-blur-10 z-30"></div>
       </div>
-      <section className="p-8">
-        <h2 className=" font-semibold text-4xl text-cyan-200">LARGAMOS</h2>
+      <section className="p-6 md: md:max-w-4xl ms-auto me-auto md:-mt-56 xl:-mt-72">
+        <h2 className=" font-semibold text-4xl text-cyan-200 ">LARGAMOS</h2>
         <h3 className=" font-semibold text-2xl">
-          ¡SALTO RUN TE ESPERA, COMO CADA AÑO CON NUEVAS EMOCIONES!
+          ¡EL CAMPEONATO SALTO RUN TE ESPERA, COMO CADA AÑO CON NUEVAS
+          EMOCIONES!
         </h3>
         <div className="my-6">
           <p>
@@ -53,19 +57,30 @@ export default function Home() {
         <p>
           Ya tenemos fechas para lo que serán 7 etapas para este campeonato.
         </p>
-        <h3 className=" mb-2 text-xl font-semibold text-cyan-100">
-          CRONOGRAMA DE FECHAS
-        </h3>
-        <section className="flex flex-col gap-4">
-          <article className=" bg-slate-800 rounded-sm p-1 grid grid-cols-3 gap-2">
-            <div className=" rounded-sm  flex items-center justify-center text-2xl font-semibold">
+        <section className="tablebg rounded-md p-2 md:p-4 mt-4 md:mt-6 flex flex-col gap-4 md:grid md:grid-cols-2 md:max-w-3xl">
+          <article className=" rounded-sm p-1 flex md:items-center md:justify-center gap-2 ">
+            <h3 className=" text-xl md:text-2xl font-semibold text-cyan-100">
+              CRONOGRAMA DE FECHAS
+            </h3>
+          </article>
+          <article className=" bg-slate-800 rounded-sm grid grid-cols-3 gap-2 ">
+            <div className=" rounded-sm  flex items-center justify-center text-xl font-semibold">
               <h4>FECHA 1</h4>
             </div>
             <div className=" bg-white text-black rounded-sm p-2 col-span-2 text-sm">
               <ul>
-                <li>Fecha:Domingo 21 de Abril</li>
-                <li>Lugar: Salto Rowing Club</li>
-                <li>Distancia: 5km competitiva y 3km participativa</li>
+                <li>
+                  <BsCalendar4Event /> Domingo 21 de Abril
+                </li>
+                <li>
+                  <CiLocationOn /> Salto Rowing Club
+                </li>
+                <li>
+                  <GiPathDistance /> 5km competitiva
+                </li>
+                <li>
+                  <GiPathDistance /> 3km participativa
+                </li>
               </ul>
             </div>
           </article>
@@ -73,11 +88,20 @@ export default function Home() {
             <div className="text-black flex items-center justify-center text-xl font-semibold">
               <h4>FECHA 2</h4>
             </div>
-            <div className="bg-white text-black rounded-sm p-2 col-span-2 text-sm">
+            <div className="bg-white text-black rounded-sm p-2 col-span-2 text-sm ">
               <ul>
-                <li>Fecha:Domingo 12 de Mayo</li>
-                <li>Lugar: Isla Bonita y/o aeropuerto</li>
-                <li>Distancia: 6km competitiva y 3km participativa</li>
+                <li>
+                  <BsCalendar4Event /> Domingo 12 de Mayo
+                </li>
+                <li>
+                  <CiLocationOn /> Isla Bonita y/o aeropuerto
+                </li>
+                <li>
+                  <GiPathDistance /> 6km competitiva
+                </li>
+                <li>
+                  <GiPathDistance /> 3km participativa
+                </li>
               </ul>
             </div>
           </article>
@@ -87,9 +111,18 @@ export default function Home() {
             </div>
             <div className=" bg-white text-black rounded-sm p-2 col-span-2 text-sm">
               <ul>
-                <li>Fecha:Domingo 16 de Junio</li>
-                <li>Lugar:Parque del Lago</li>
-                <li>Distancia:7km competitiva y 3km participativa</li>
+                <li>
+                  <BsCalendar4Event /> Domingo 16 de Junio
+                </li>
+                <li>
+                  <CiLocationOn /> Parque del Lago
+                </li>
+                <li>
+                  <GiPathDistance /> 7km competitiva
+                </li>
+                <li>
+                  <GiPathDistance /> 3km participativa
+                </li>
               </ul>
             </div>
           </article>
@@ -99,9 +132,18 @@ export default function Home() {
             </div>
             <div className="bg-white text-black rounded-sm p-2 col-span-2 text-sm">
               <ul>
-                <li>Fecha: Domingo 21 de Julio</li>
-                <li>Lugar: Hipódromo</li>
-                <li>Distancia: 8km competitiva y 3km participativa</li>
+                <li>
+                  <BsCalendar4Event /> Domingo 21 de Julio
+                </li>
+                <li>
+                  <CiLocationOn /> Hipódromo
+                </li>
+                <li>
+                  <GiPathDistance /> 8km competitiva
+                </li>
+                <li>
+                  <GiPathDistance /> 3km participativa
+                </li>
               </ul>
             </div>
           </article>
@@ -111,9 +153,18 @@ export default function Home() {
             </div>
             <div className="bg-white text-black rounded-sm p-2 col-span-2 text-sm">
               <ul>
-                <li>Fecha:Domingo 18 de Agosto</li>
-                <li>Lugar: Complejo Villa España</li>
-                <li>Distancia: 8km competitiva y 3k participativa</li>
+                <li>
+                  <BsCalendar4Event /> Domingo 18 de Agosto
+                </li>
+                <li>
+                  <CiLocationOn /> Complejo Villa España
+                </li>
+                <li>
+                  <GiPathDistance /> 8km competitiva
+                </li>
+                <li>
+                  <GiPathDistance /> 3km participativa
+                </li>
               </ul>
             </div>
           </article>
@@ -123,9 +174,18 @@ export default function Home() {
             </div>
             <div className="bg-white text-black rounded-sm p-2 col-span-2 text-sm">
               <ul>
-                <li>Fecha:Domingo 15 de Septiembre</li>
-                <li>Lugar: Polo (Costanera Norte)</li>
-                <li>Distancia: 6km competitiva y 3km participativa</li>
+                <li>
+                  <BsCalendar4Event /> Domingo 15 de Septiembre
+                </li>
+                <li>
+                  <CiLocationOn /> Polo (Costanera Norte)
+                </li>
+                <li>
+                  <GiPathDistance /> 6km competitiva
+                </li>
+                <li>
+                  <GiPathDistance /> 3km participativa
+                </li>
               </ul>
             </div>
           </article>
@@ -135,9 +195,18 @@ export default function Home() {
             </div>
             <div className="bg-white text-black rounded-sm p-2 col-span-2 text-sm">
               <ul>
-                <li>Fecha: Domingo 20 de Octubre</li>
-                <li>Lugar: Plaza Treinta y Tres</li>
-                <li>Distancia: 5km competitiva y 3km participativa</li>
+                <li>
+                  <BsCalendar4Event /> Domingo 20 de Octubre
+                </li>
+                <li>
+                  <CiLocationOn /> Plaza Treinta y Tres
+                </li>
+                <li>
+                  <GiPathDistance /> 5km competitiva
+                </li>
+                <li>
+                  <GiPathDistance /> 3km participativa
+                </li>
               </ul>
             </div>
           </article>

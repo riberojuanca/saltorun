@@ -110,12 +110,22 @@
   }
 }
 
+li {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
 Table {
   pointer-events: none;
   border-radius: 6px;
   background-color: rgba(0, 0, 0, 0.087);
   margin-block: 1rem;
   margin-inline: auto;
+}
+
+.tablebg {
+  background-color: rgba(0, 0, 0, 0.087);
 }
 
 tr {
