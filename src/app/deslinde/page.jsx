@@ -7,12 +7,12 @@ function deslinde() {
     <main className=" font-light p-6 text-zinc-200 flex flex-col gap-4 ms-auto me-auto max-w-4xl text-lg">
       <h1 className="mt-6 font-semibold text-4xl">DESLINDE</h1>
       <Link
-        className="w-fit flex items-center gap-1 underline text-sky-900 hover:brightness-110"
+        className="w-fit flex items-center gap-1 underline text-cyan-200 hover:brightness-110"
         href="https://drive.google.com/file/d/1SIC2TbSsb_kTBl-v5hh8Ki1sltZNUDLf/view?pli=1 "
         target="_blank"
         rel="noopener"
       >
-        <TbFileDownload className="text-2xl mb-1" /> DESCARGAR
+        DESCARGAR
       </Link>
       <p>
         Declaro bajo juramento que no padezco afecciones físicas adquiridas o
