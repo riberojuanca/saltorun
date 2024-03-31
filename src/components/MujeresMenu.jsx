@@ -16,11 +16,11 @@ function MujeresMenu() {
   return (
     <>
       <section>
-        <div className=" flex items-center justify-between text-center pt-4 px-4 w-fit text-lg  me-auto ms-auto">
-          <FaFemale className="text-3xl md:text-4xl" />
-          <h1 className="text-2xl md:text-3xl">MUJERES</h1>
+        <div className=" flex items-center justify-between text-center pt-8 px-4 w-fit text-lg  me-auto ms-auto">
+          <FaFemale className="text-4xl md:text-4xl" />
+          <h1 className="font-semibold text-3xl md:text-4xl">MUJERES</h1>
         </div>
-        <div className=" flex items-center justify-between text-center pb-4 mb-6 w-fit text-lg md:text-xl gap-4 me-auto ms-auto">
+        <div className=" flex items-center justify-between text-center pb-6 mb-6 w-fit text-xl md:text-2xl font-semibold text-cyan-200 gap-4 me-auto ms-auto">
           <h2 className="">GENERAL Y POR CATEGORÍA</h2>
         </div>
         <div className=" categoriesMenuMujeres ms-auto me-auto max-w-5xl h-40 mb-5  opacity-80 text-white flex items-center justify-center px-6">
