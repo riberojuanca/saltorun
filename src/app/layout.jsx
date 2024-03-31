@@ -19,7 +19,7 @@ export const metadata = {
   title: "Salto Run",
   description: "Campeonato Salto Run 2024",
   icons: {
-    icon: "/saltorun24.png",
+    icon: "/SaltoRunfavicon.png",
   },
 };
 
