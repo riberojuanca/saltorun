@@ -7,11 +7,11 @@ import { GiPathDistance } from "react-icons/gi";
 
 export default function Home() {
   return (
-    <main className="w-full ms-auto me-auto">
+    <main className="  w-full ms-auto me-auto">
       {/* <h1 className="ms-auto me-auto  text-center p-6  font-semibold w-full h-full text-4xl z-40  md:max-w-full xl:text-5xl md:sticky bg-slate-900  top-20">
         SALTO RUN 2024
       </h1> */}
-      <div className="relative w-full h-full top-0 md:-top-64 xl:-top-80">
+      <div className="relative w-full h-full top-0 landscape:-top-16 md:-top-64 xl:-top-80">
         <Image
           className="w-full md:z-30  md:mt-44 xl:pt-2"
           src={"/portadasaltorundesktop.jpg"}

@@ -16,7 +16,7 @@ import Link from "next/link";
 function Menu() {
   return (
     <div>
-      <nav className=" fixed top-0 z-50 w-full bg-slate-800 text-white flex items-center justify-center gap-4 h-20 px-6 border-b-2 border-cyan-200">
+      <nav className=" fixed top-0 z-50 w-full bg-neutral-950 text-white flex items-center justify-center gap-4 h-20 px-6 border-b-4 border-neutral-900">
         <div className="">
           <Link href="/">
             <Image
