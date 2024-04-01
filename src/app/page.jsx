@@ -84,7 +84,7 @@ export default function Home() {
               </ul>
             </div>
           </article>
-          <article className=" bg-cyan-200  rounded-sm p-1 grid grid-cols-3">
+          <article className=" bg-cyan-200  rounded-sm  grid grid-cols-3">
             <div className="text-black flex items-center justify-center text-xl font-semibold">
               <h4>FECHA 2</h4>
             </div>
@@ -105,7 +105,7 @@ export default function Home() {
               </ul>
             </div>
           </article>
-          <article className="bg-slate-800 rounded-sm p-1 grid grid-cols-3">
+          <article className="bg-slate-800 rounded-sm grid grid-cols-3">
             <div className="flex items-center justify-center text-xl font-semibold">
               <h4>FECHA 3</h4>
             </div>
@@ -126,7 +126,7 @@ export default function Home() {
               </ul>
             </div>
           </article>
-          <article className="bg-cyan-200 rounded-sm p-1 grid grid-cols-3">
+          <article className="bg-cyan-200 rounded-sm  grid grid-cols-3">
             <div className="text-black flex items-center justify-center text-xl font-semibold">
               <h4>FECHA 4</h4>
             </div>
@@ -147,7 +147,7 @@ export default function Home() {
               </ul>
             </div>
           </article>
-          <article className="bg-slate-800 rounded-sm p-1 grid grid-cols-3">
+          <article className="bg-slate-800 rounded-sm grid grid-cols-3">
             <div className="flex items-center justify-center text-xl font-semibold">
               <h4>FECHA 5</h4>
             </div>
@@ -168,7 +168,7 @@ export default function Home() {
               </ul>
             </div>
           </article>
-          <article className="bg-cyan-200 rounded-sm p-1 grid grid-cols-3">
+          <article className="bg-cyan-200 rounded-sm grid grid-cols-3">
             <div className="text-black flex items-center justify-center text-xl font-semibold">
               <h4>FECHA 6</h4>
             </div>
@@ -189,7 +189,7 @@ export default function Home() {
               </ul>
             </div>
           </article>
-          <article className="bg-slate-800 rounded-sm p-1 grid grid-cols-3">
+          <article className="bg-slate-800 rounded-sm  grid grid-cols-3">
             <div className="flex items-center justify-center text-xl font-semibold">
               <h4>FECHA 7</h4>
             </div>
