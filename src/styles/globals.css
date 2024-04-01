@@ -143,6 +143,17 @@ tr {
   background: rgb(56, 0, 0);
 }
 
+/* .podioGeneralHombres:nth-child(1) {
+  background: blue;
+}
+
+.podioGeneralHombres:nth-child(2) {
+  background: rgb(0, 0, 161);
+}
+.podioGeneralHombres:nth-child(3) {
+  background: rgb(0, 0, 97);
+} */
+
 .podioGeneralMujeres:nth-child(1) {
   background: rgb(196, 1, 196);
 }
@@ -159,6 +170,9 @@ tr {
   padding: 0.5rem;
   text-align: center;
   border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.276);
 }
 
@@ -171,6 +185,9 @@ tr {
   padding: 0.5rem;
   text-align: center;
   border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.276);
 }
 
