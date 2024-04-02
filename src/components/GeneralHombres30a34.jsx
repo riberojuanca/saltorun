@@ -60,7 +60,9 @@ async function GeneralHombres30a34() {
     <main className="ms-auto me-auto max-w-5xl mt-8 mb-8">
       <section className="p-4 ms-auto me-auto">
         <div className=" flex items-center justify-between text-center px-4 w-fit text-lg md:text-xl gap-4 me-auto ms-auto">
-          <h1 className="">POSICIONES HOMBRES 30 A 34</h1>
+          <h1 className="md:text-2xl font-semibold">
+            POSICIONES HOMBRES 30 A 34
+          </h1>
         </div>
         <Table>
           <TableCaption>Campeonato Salto Run 2024</TableCaption>
@@ -83,7 +85,9 @@ async function GeneralHombres30a34() {
                 <TableCell>
                   {player.country} {player.names}
                 </TableCell>
-                <TableCell className="text-center">{player.totalPoints}</TableCell>
+                <TableCell className="text-center">
+                  {player.totalPoints}
+                </TableCell>
                 {/* <TableCell>{player.times}</TableCell> */}
               </TableRow>
             ))}

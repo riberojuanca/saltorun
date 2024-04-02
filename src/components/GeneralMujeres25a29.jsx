@@ -60,7 +60,9 @@ async function GeneralMujeres25a29() {
     <main className="ms-auto me-auto max-w-5xl mt-8 mb-8">
       <section className="p-4 ms-auto me-auto">
         <div className=" flex items-center justify-between text-center px-4 w-fit text-lg md:text-xl gap-4 me-auto ms-auto">
-          <h1 className="">POSICIONES MUJERES 25 A 29</h1>
+          <h1 className="md:text-2xl font-semibold">
+            POSICIONES MUJERES 25 A 29
+          </h1>
         </div>
         <Table>
           <TableCaption>Campeonato Salto Run 2024</TableCaption>
