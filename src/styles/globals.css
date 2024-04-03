@@ -165,6 +165,44 @@ tr {
   background: rgb(80, 0, 80);
 }
 
+/*COLORES PODIO FECHA*/
+.podioFecha:nth-child(1) {
+  background: #a5f3fc;
+  color: #1e293b;
+}
+
+.podioFecha:nth-child(2) {
+  background: #8bcdd4;
+  color: #28374f;
+}
+.podioFecha:nth-child(3) {
+  background: #72a8ae;
+  color: #1f2b3e;
+}
+
+.podioFecha:nth-child(4) {
+  background: #5c888d;
+}
+
+.podioFecha:nth-child(5) {
+  background: #426165;
+}
+.podioFecha:nth-child(6) {
+  background: #293c3e;
+}
+.podioFecha:nth-child(7) {
+  background: #1c292b;
+}
+.podioFecha:nth-child(8) {
+  background: #182528;
+}
+.podioFecha:nth-child(9) {
+  background: #121c1f;
+}
+.podioFecha:nth-child(10) {
+  background: #0c1416;
+}
+
 .ulMenu li {
   background-color: #000000b1;
   padding: 0.5rem;
