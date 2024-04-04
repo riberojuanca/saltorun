@@ -15,7 +15,7 @@ function handleClick(e) {
 function MujeresMenu() {
   return (
     <>
-      <section>
+      <section className="p-4">
         <div className=" flex items-center justify-between text-center pt-8 px-4 w-fit text-lg  me-auto ms-auto">
           <FaFemale className="text-4xl md:text-4xl" />
           <h1 className="font-semibold text-3xl md:text-4xl">MUJERES</h1>
@@ -24,7 +24,7 @@ function MujeresMenu() {
           <h2 className="">GENERAL Y POR CATEGORÍA</h2>
         </div>
         <div className=" categoriesMenuMujeres ms-auto me-auto max-w-5xl h-40 mb-5  opacity-80 text-white flex items-center justify-center px-6">
-          <ul className="ulMenuMujeres w-full grid grid-cols-3 gap-5 text-xs md:text-sm">
+          <ul className="ulMenuMujeres w-full grid grid-cols-3 gap-5 text-xs font-semibold md:text-sm">
             <Link href="/tables/mujeres/GeneralMujeres">
               <li
                 className=" relative flex justify-center items-center link"

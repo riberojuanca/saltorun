@@ -8,6 +8,7 @@ import { GrStatusInfo } from "react-icons/gr";
 import { TbTableShortcut } from "react-icons/tb";
 import { FaFemale, FaMale } from "react-icons/fa";
 import { Famale } from "react-icons/fa";
+import { GiCheckeredFlag } from "react-icons/gi";
 
 import { MdOutlineAssignmentInd } from "react-icons/md";
 import Image from "next/image";
@@ -17,26 +18,21 @@ function Menu() {
   return (
     <div>
       <nav className=" fixed top-0 z-50 w-full bg-neutral-950 text-white flex items-center justify-center gap-4 h-20 px-6 border-b-4 border-neutral-900">
-        <div className="">
-          <Link href="/">
-            <Image
-              className=" w-24 h-auto "
-              src="/saltorun24.png"
-              alt=""
-              width={100}
-              height={50}
-              priority={true}
-              quality={100}
-            />
-          </Link>
-        </div>
-        <div className=" z-50 w-fit rounded-md  text-white p-2">
-          <ul className="flex gap-6 text-2xl opacity-65">
-            <li>
-              <Link href="/tables">
-                <TbTableShortcut />
-              </Link>
-            </li>
+        <div className="flex gap-6 z-50 w-fit rounded-md  text-white p-2">
+          <div className="">
+            <Link href="/">
+              <Image
+                className=" w-24 h-auto "
+                src="/saltorun24.png"
+                alt=""
+                width={100}
+                height={50}
+                priority={true}
+                quality={100}
+              />
+            </Link>
+          </div>
+          <ul className="flex gap-6 text-3xl opacity-65">
             <li>
               <Link href="/tables/mujeres">
                 <FaFemale />
@@ -47,12 +43,11 @@ function Menu() {
                 <FaMale />
               </Link>
             </li>
-            {/* <li>
-              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeUJR14q0nf-XY6hPt6LjMKGztsmWYwF1FakTSuKh_3WmuUJw/viewform?pli=1">
-                <FaWpforms />
+            <li>
+              <Link href="/fechas">
+                <GiCheckeredFlag />
               </Link>
-            </li> */}
-
+            </li>
             <li>
               <Link href="/reglamento">
                 <GrStatusInfo />

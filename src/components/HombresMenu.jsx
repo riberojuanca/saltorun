@@ -16,7 +16,7 @@ function handleClick(e) {
 function HombresMenu() {
   return (
     <>
-      <section>
+      <section className="p-4">
         <div className="flex items-center justify-between text-center pt-8 px-4 w-fit text-lg  me-auto ms-auto">
           <FaMale className="text-4xl " />
           <h1 className="font-semibold text-3xl md:text-4xl">HOMBRES</h1>
