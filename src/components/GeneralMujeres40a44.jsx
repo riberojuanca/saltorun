@@ -81,7 +81,7 @@ async function GeneralMujeres40a44() {
         <div className=" flex items-center justify-between text-center px-4 w-fit text-lg md:text-xl gap-4 me-auto ms-auto">
           <h1 className="md:text-2xl font-semibold">GENERAL MUJERES 40 A 44</h1>
         </div>
-        <Table className="md:hidden">
+        <Table className="landscape:hidden md:hidden">
           <TableCaption>Campeonato Salto Run 2024</TableCaption>
           <TableHeader>
             <TableRow>
@@ -110,7 +110,7 @@ async function GeneralMujeres40a44() {
 
         {/* TABLA COMPLETA*/}
 
-        <Table className="opacity-0 pointer-events-none absolute overflow-hidden md:opacity-100 md:relative">
+        <Table className="opacity-0 pointer-events-none absolute overflow-hidden landscape:opacity-100 landscape:relative  md:opacity-100 md:relative">
           <TableCaption>Campeonato Salto Run 2024</TableCaption>
           <TableHeader>
             <TableRow>
@@ -146,7 +146,7 @@ async function GeneralMujeres40a44() {
                 <TableCell className="flex justify-center bg-zinc-900 w-12">
                   {podioIcon(index)}
                 </TableCell>
-                <TableCell>
+                <TableCell className="w-full">
                   {player.country} {player.names}
                 </TableCell>
                 <TableCell>{player.fecha1Points}</TableCell>

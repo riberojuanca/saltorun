@@ -83,7 +83,7 @@ async function GeneralMujeres() {
             POSICIONES MUJERES GENERAL
           </h1>
         </div>
-        <Table className="md:hidden">
+        <Table className="landscape:hidden md:hidden">
           <TableCaption>Campeonato Salto Run 2024</TableCaption>
           <TableHeader>
             <TableRow>
@@ -112,7 +112,7 @@ async function GeneralMujeres() {
 
         {/* TABLA COMPLETA*/}
 
-        <Table className="opacity-0 pointer-events-none absolute overflow-hidden md:opacity-100 md:relative">
+        <Table className="opacity-0 pointer-events-none absolute overflow-hidden landscape:opacity-100 landscape:relative  md:opacity-100 md:relative">
           <TableCaption>Campeonato Salto Run 2024</TableCaption>
           <TableHeader>
             <TableRow>
@@ -148,7 +148,7 @@ async function GeneralMujeres() {
                 <TableCell className="flex justify-center bg-zinc-900 w-12">
                   {podioIcon(index)}
                 </TableCell>
-                <TableCell>
+                <TableCell className="w-full">
                   {player.country} {player.names}
                 </TableCell>
                 <TableCell>{player.fecha1Points}</TableCell>
