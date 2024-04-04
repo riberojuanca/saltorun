@@ -24,7 +24,7 @@ function timeToSeconds(time) {
 async function GeneralMujeres() {
   const csv = await fetch(
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vSDU5wnysIhArsJeWs5p1wQOfRBZbD-vCfR8LX0hASFE0e33uvnyBBFNsuXG8ueAyXsSpdcC95blH7d/pub?output=tsv",
-    { next: { tags: [GeneralMujeres] } }
+    { next: { tags: ["csv"] } }
   ).then((res) => res.text());
 
   const generalMujeres = csv
