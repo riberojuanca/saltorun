@@ -148,7 +148,7 @@ async function GeneralMujeresEspeciales() {
                 <TableCell className="flex justify-center bg-zinc-900 w-12">
                   {podioIcon(index)}
                 </TableCell>
-                <TableCell className="w-full">
+                <TableCell className="w-fit">
                   {player.country} {player.names}
                 </TableCell>
                 <TableCell>{player.fecha1Points}</TableCell>
