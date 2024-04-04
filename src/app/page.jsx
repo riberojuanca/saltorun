@@ -19,6 +19,7 @@ export default function Home() {
           width={1920}
           height={1080}
           quality={100}
+          priority={true}
         ></Image>
         <div className="absolute top-0 left-0 w-full h-full opacity-60 bg-neutral-950 backdrop-blur-10 z-30"></div>
       </div>
@@ -48,7 +49,9 @@ export default function Home() {
           </p>
           <Link
             className="underline text-cyan-100 text-base"
-            href={"/inscribirse"}
+            href={
+              "https://docs.google.com/forms/d/e/1FAIpQLSeUJR14q0nf-XY6hPt6LjMKGztsmWYwF1FakTSuKh_3WmuUJw/viewform?pli=1"
+            }
           >
             COMPLETAR FORMULARIO
           </Link>
