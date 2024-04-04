@@ -132,6 +132,11 @@ tr {
   border-color: #282828;
 }
 
+/*Esto solamente si es necesario achivar texto para que quepan los nombres completo*/
+/* td {
+  font-size: 0.7rem;
+} */
+
 .podioGeneralHombres:nth-child(1) {
   background: red;
 }

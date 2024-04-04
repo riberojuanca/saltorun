@@ -25,7 +25,7 @@ function timeToSeconds(time) {
 
 async function CuartaFecha() {
   const csv = await fetch(
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vSX72EO7aIIFzEpqbsDTxA8aHjGEhGvpy9o-ETU-ZJVBzYILr8RyUn9jCAx-tFZQo0S4p1NqS43f6sv/pub?output=tsv"
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vR1d3NP4WPhyCj3tSVIZ-qU_8xv98anpbtHcTqKOy1S0GPUbu4qhJeEDfj_HX9zVd9-xxZwgOyKd_sd/pub?output=tsv"
   ).then((res) => res.text());
 
   const cuartaFecha = csv

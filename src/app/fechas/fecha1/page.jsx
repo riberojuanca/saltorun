@@ -25,7 +25,7 @@ function timeToSeconds(time) {
 
 async function PrimerFecha() {
   const csv = await fetch(
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vSX72EO7aIIFzEpqbsDTxA8aHjGEhGvpy9o-ETU-ZJVBzYILr8RyUn9jCAx-tFZQo0S4p1NqS43f6sv/pub?output=tsv"
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQHIVIyd99OiQ6xrmNGc2OBYfHxTDD7IAZOkd4uj-Lg23Vm8DlMjI8c0Q8i7sDspjjgtP4IwbMj3B1-/pub?output=tsv"
   ).then((res) => res.text());
 
   const primerFecha = csv
