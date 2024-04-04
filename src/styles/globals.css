@@ -227,6 +227,12 @@ tr {
   right: 6px;
 }
 
+/* @media screen and (min-width: 100px) {
+  .hiddenMobile {
+    display: none;
+  }
+} */
+
 @media screen and (min-width: 600px) {
   Table {
     max-width: 52rem;

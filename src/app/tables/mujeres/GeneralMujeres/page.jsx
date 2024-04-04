@@ -1,5 +1,6 @@
 import React from "react";
 import { AiFillTrophy } from "react-icons/ai";
+import { GiCheckeredFlag } from "react-icons/gi";
 
 import {
   Table,
@@ -29,7 +30,18 @@ async function GeneralMujeres() {
     .split("\n")
     .slice(1)
     .map((row) => {
-      const [names, country, totalPoints] = row.split("\t");
+      const [
+        names,
+        country,
+        totalPoints,
+        fecha1Points,
+        fecha2Points,
+        fecha3Points,
+        fecha4Points,
+        fecha5Points,
+        fecha6Points,
+        fecha7Points,
+      ] = row.split("\t");
 
       return {
         names,
@@ -37,6 +49,13 @@ async function GeneralMujeres() {
         // times,
         // timeInSeconds: timeToSeconds(times), // Convertir el tiempo a segundos
         totalPoints,
+        fecha1Points,
+        fecha2Points,
+        fecha3Points,
+        fecha4Points,
+        fecha5Points,
+        fecha6Points,
+        fecha7Points,
       };
     });
 
@@ -64,14 +83,13 @@ async function GeneralMujeres() {
             POSICIONES MUJERES GENERAL
           </h1>
         </div>
-        <Table>
+        <Table className="md:hidden">
           <TableCaption>Campeonato Salto Run 2024</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead></TableHead>
               <TableHead>Nombre</TableHead>
-              <TableHead className="md:max-w-6 text-center">Puntos</TableHead>
-              {/* <TableHead>Tiempo</TableHead> */}
+              <TableHead className="md:max-w-6 text-center">Total</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -83,6 +101,63 @@ async function GeneralMujeres() {
                 <TableCell>
                   {player.country} {player.names}
                 </TableCell>
+                <TableCell className="text-center">
+                  {player.totalPoints}
+                </TableCell>
+                {/* <TableCell>{player.times}</TableCell> */}
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+
+        {/* TABLA COMPLETA*/}
+
+        <Table className="opacity-0 pointer-events-none absolute overflow-hidden md:opacity-100 md:relative">
+          <TableCaption>Campeonato Salto Run 2024</TableCaption>
+          <TableHeader>
+            <TableRow>
+              <TableHead></TableHead>
+              <TableHead>Nombre</TableHead>
+              <TableHead>
+                <GiCheckeredFlag className="inline" />1
+              </TableHead>
+              <TableHead>
+                <GiCheckeredFlag className="inline" />2
+              </TableHead>
+              <TableHead>
+                <GiCheckeredFlag className="inline" />3
+              </TableHead>
+              <TableHead>
+                <GiCheckeredFlag className="inline" />4
+              </TableHead>
+              <TableHead>
+                <GiCheckeredFlag className="inline" />5
+              </TableHead>
+              <TableHead>
+                <GiCheckeredFlag className="inline" />6
+              </TableHead>
+              <TableHead>
+                <GiCheckeredFlag className="inline" />7
+              </TableHead>
+              <TableHead className=" text-center">Total</TableHead>
+            </TableRow>
+          </TableHeader>
+          <TableBody>
+            {generalMujeres.map((player, index) => (
+              <TableRow key={index} className="podioGeneralMujeres">
+                <TableCell className="flex justify-center bg-zinc-900 w-12">
+                  {podioIcon(index)}
+                </TableCell>
+                <TableCell>
+                  {player.country} {player.names}
+                </TableCell>
+                <TableCell>{player.fecha1Points}</TableCell>
+                <TableCell>{player.fecha2Points}</TableCell>
+                <TableCell>{player.fecha3Points}</TableCell>
+                <TableCell>{player.fecha4Points}</TableCell>
+                <TableCell>{player.fecha5Points}</TableCell>
+                <TableCell>{player.fecha6Points}</TableCell>
+                <TableCell>{player.fecha7Points}</TableCell>
                 <TableCell className="text-center">
                   {player.totalPoints}
                 </TableCell>
