@@ -142,7 +142,10 @@ async function GeneralMujeres45a49() {
           </TableHeader>
           <TableBody>
             {generalMujeres45a49.map((player, index) => (
-              <TableRow key={index} className="podioGeneralMujeres">
+              <TableRow
+                key={index}
+                className="landscape:text-xs md:landscape:text-base podioGeneralMujeres"
+              >
                 <TableCell className="flex justify-center bg-zinc-900 w-12">
                   {podioIcon(index)}
                 </TableCell>

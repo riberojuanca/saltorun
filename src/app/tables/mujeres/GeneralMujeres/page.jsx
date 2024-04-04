@@ -112,7 +112,7 @@ async function GeneralMujeres() {
 
         {/* TABLA COMPLETA*/}
 
-        <Table className="opacity-0 pointer-events-none absolute overflow-hidden landscape:opacity-100 landscape:relative  md:opacity-100 md:relative">
+        <Table className="opacity-0 pointer-events-none absolute overflow-hidden landscape:opacity-100 landscape:relative  md:opacity-100 md:relative ">
           <TableCaption>Campeonato Salto Run 2024</TableCaption>
           <TableHeader>
             <TableRow>
@@ -144,11 +144,14 @@ async function GeneralMujeres() {
           </TableHeader>
           <TableBody>
             {generalMujeres.map((player, index) => (
-              <TableRow key={index} className="podioGeneralMujeres">
+              <TableRow
+                key={index}
+                className="landscape:text-xs md:landscape:text-base podioGeneralMujeres"
+              >
                 <TableCell className="flex justify-center bg-zinc-900 w-12">
                   {podioIcon(index)}
                 </TableCell>
-                <TableCell className="w-fit">
+                <TableCell className="w-fit ">
                   {player.country} {player.names}
                 </TableCell>
                 <TableCell>{player.fecha1Points}</TableCell>
