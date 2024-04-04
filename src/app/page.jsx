@@ -39,6 +39,30 @@ export default function Home() {
             inolvidable junto a corredores de varios países.
           </p>
           <br />
+          <h3 className="text-xl font-semibold text-cyan-100">REGLAMENTO</h3>
+          <p>
+            Para poder participar del campeonato debes estar de acuerdo con
+            nuestro reglamento
+          </p>
+          <Link
+            className="underline text-cyan-100 text-base"
+            href={"/reglamento"}
+          >
+            LEER REGLAMENTO
+          </Link>
+          <br />
+          <br />
+
+          <h3 className="text-xl font-semibold text-cyan-100">DESLINDE</h3>
+          <p>Imprime el deslinde de responsabilidad</p>
+          <Link
+            className="underline text-cyan-100 text-base"
+            href={"/deslinde"}
+          >
+            LEER Y DESCARGAR DESLINDE
+          </Link>
+          <br />
+          <br />
           <h3 className="text-xl font-semibold text-cyan-100">
             CORRÉ A INSCRIBIRTE
           </h3>
@@ -47,6 +71,16 @@ export default function Home() {
             emociones. No te quedes afuera. Inscríbete y sé parte de esta gran
             fiesta del deporte salteño.
           </p>
+          <h3 className="text-ms mt-3 font-semibold text-cyan-100">COSTO</h3>
+          <p>Distancia competitiva: $350 pesos uruguayps</p>
+          <p>Distancia participativa: $250 pesos uruguayos</p>
+          <h3 className="text-ms mt-3 font-semibold text-cyan-100">
+            SI QUIERES ABONAR EL TOTAL (7) DE FECHAS
+          </h3>
+          <p>Distancia competitiva: $2000 pesos uruguayps</p>
+          <p>Distancia participativa: $1300 pesos uruguayos</p>
+          <small>Abonar antes de compenzar la primer fecha.</small>
+          <br />
           <Link
             className="underline text-cyan-100 text-base"
             href={
@@ -55,6 +89,37 @@ export default function Home() {
           >
             COMPLETAR FORMULARIO
           </Link>
+          <h3 className="text-ms mt-3 font-semibold text-cyan-100">
+            LUEGO DE COMPLETAR EL FORMULARIO PAGAS EN ABITAB
+          </h3>
+          <b>
+            <p>Colectivo N° 123467</p>
+          </b>
+          <h3 className="text-ms mt-3 font-semibold text-cyan-100">
+            LEVANTAS TU NÚMERO
+          </h3>
+          <p>
+            En gimnasio de Richard Nessi, ubicado en{" "}
+            <b>Artigas 2099 entre Yatay y 1° de Mayo.</b> a partir de la fecha
+            confirmada en nuestras redes sociales.
+          </p>
+          <p>Importante, a la hora de levantar tu número, no olvides llevar:</p>
+          <ol>
+            <li>- Ticket de pago</li>
+            <li>- Cédula de identidad</li>
+            <li>- Deslinde impreso y firmado</li>
+            <li>
+              - Ficha médica o certificado médico apto para realizar actividades
+              físicas
+            </li>
+          </ol>
+          <h3 className="text-ms mt-3 font-semibold text-cyan-100">
+            ATLETAS DE OTROS PAÍSES
+          </h3>
+          <p>
+            En este caso, puedes pagar y levantar tu número el mismo día de
+            participación.
+          </p>
         </div>
         <h3 className="text-xl font-semibold text-cyan-100">AGENDA</h3>
         <p>
