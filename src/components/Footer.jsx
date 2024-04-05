@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
+import Image from "next/image";
 
 function Footer() {
   return (
@@ -34,13 +35,20 @@ function Footer() {
         </Link>
       </article>
       {/* <hr className="w-80 my-6 opacity-5" /> */}
-      <div className=" w-full ms-auto me-auto mt-4 mb-6 ">
+      <div className="flex items-baseline gap-1 w-fit ms-auto me-auto mt-4 mb-6 ">
         <small>SALTO RUN © POR </small>
         <Link
-          className="mr-auto grayscale hover:grayscale-0"
+          className="flex items-baseline mr-auto grayscale hover:grayscale-0"
           href={"https://luzbelito.com"}
         >
-          🕯️<small>LUZBELITO</small>
+          <Image
+            className="m-1"
+            src="/luzbelitoicon.png"
+            width={20}
+            height={20}
+            alt="Vela, logo/icono de Luzbelito.com"
+          ></Image>
+          <small>LUZBELITO</small>
         </Link>
       </div>
     </section>
