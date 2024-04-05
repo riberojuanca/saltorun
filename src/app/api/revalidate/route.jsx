@@ -3,5 +3,5 @@ import { revalidateTag } from "next/cache";
 
 export async function GET() {
   revalidateTag("csv");
-  return Response.json({ revalidated: true });
+  return Response.json({ revalidated: true, now: Date.now() });
 }
