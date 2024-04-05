@@ -11,6 +11,8 @@ function page() {
           alt="Foto largada Complejo Villa España 2023"
           width={700}
           height={400}
+          quality={100}
+          priority={true}
         ></Image>
         <div className=" z-40 bgFechas text-sm md:text-lg text-white top-4 md:top-8 p-1 md:p-2 rounded-e-sm absolute ">
           Largada Complejo Villa España, edición 2023
