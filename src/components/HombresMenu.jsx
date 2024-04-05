@@ -24,7 +24,7 @@ function HombresMenu() {
         <div className=" flex items-center justify-between text-center pb-6 mb-6 w-fit text-xl md:text-2xl font-semibold text-cyan-200 me-auto ms-auto">
           <h2 className="">GENERAL Y POR CATEGORÍA</h2>
         </div>
-        <div className="  categoriesMenu ms-auto me-auto max-w-5xl h-40 mb-5  opacity-80 text-white flex items-center justify-center px-6">
+        <div className="  categoriesMenu ms-auto me-auto max-w-5xl h-40 mb-5  opacity-80 text-white flex items-center justify-center px-6 font-semibold md:text-sm">
           <ul className="ulMenu w-full grid grid-cols-3 gap-5 text-xs">
             <Link href="/tables/hombres/GeneralHombres">
               <li
