@@ -219,12 +219,18 @@ tr {
   top: -10px;
   right: 6px;
 }
+.bgGreta {
+  background: rgb(196, 1, 196);
+}
 
 .hombres-trophy {
   background: blue;
   pointer-events: none;
   top: -10px;
   right: 6px;
+}
+.bgBryan {
+  background: blue;
 }
 
 /* @media screen and (min-width: 100px) {
@@ -256,7 +262,7 @@ tr {
   }
 
   .ulMenu li:hover {
-    background-color: rgb(147, 0, 0);
+    background-color: rgb(0, 0, 147);
   }
 
   .categoriesMenuMujeres {
