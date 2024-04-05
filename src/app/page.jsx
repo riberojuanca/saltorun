@@ -12,7 +12,7 @@ export default function Home() {
       {/* <h1 className="ms-auto me-auto  text-center p-6  font-semibold w-full h-full text-4xl z-40  md:max-w-full xl:text-5xl md:sticky bg-slate-900  top-20">
         SALTO RUN 2024
       </h1> */}
-      <div className="relative w-full h-full top-0 md:-top-64 xl:-top-80">
+      <div className="pInicio relative w-full h-full top-0 md:-top-64 xl:-top-80">
         <Image
           className="w-full md:z-30  md:mt-44 xl:pt-2"
           src={"/portadasaltorundesktop.jpg"}
@@ -30,7 +30,7 @@ export default function Home() {
           ¡EL CAMPEONATO SALTO RUN TE ESPERA, COMO CADA AÑO CON NUEVAS
           EMOCIONES!
         </h3>
-        <div className="my-6">
+        <div className="pInicio my-6">
           <p>
             ¿Te apasiona el atletismo? ¿Disfrutas de los retos y la superación
             personal?
@@ -122,10 +122,12 @@ export default function Home() {
             participación.
           </p>
         </div>
-        <h3 className="text-xl font-semibold text-cyan-100">AGENDA</h3>
-        <p>
-          Ya tenemos fechas para lo que serán 7 etapas para este campeonato.
-        </p>
+        <div className="pInicio">
+          <h3 className="text-xl font-semibold text-cyan-100">AGENDA</h3>
+          <p>
+            Ya tenemos fechas para lo que serán 7 etapas para este campeonato.
+          </p>
+        </div>
         <section className="tablebg rounded-md p-2 md:p-4 mt-4 md:mt-6 flex flex-col gap-4 md:grid md:grid-cols-2 md:max-w-3xl">
           <article className=" rounded-sm p-1 flex items-center md:justify-center gap-2 ">
             <GiCheckeredFlag className="text-3xl md:text-4xl" />

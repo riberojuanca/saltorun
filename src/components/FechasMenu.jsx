@@ -33,7 +33,7 @@ function FechasMenu() {
         <div className=" flex items-center justify-between text-center md:pb-6 md:mb-6 w-fit text-xl md:text-2xl font-semibold text-cyan-200 me-auto ms-auto">
           <h2 className="">POSICIONES FECHA A FECHA</h2>
         </div>
-        <section className="categoriesMenu rounded-md p-2 md:px-6 mt-4 grid grid-cols-7 gap-4 md:grid md:max-w-3xl ms-auto me-auto">
+        <section className="categoriesMenu categoriesMenu2 rounded-md p-2 md:px-6 mt-4 grid grid-cols-7 gap-4 md:grid md:max-w-3xl ms-auto me-auto">
           <article className="bg-slate-800 rounded-sm">
             <Link
               href={"/fechas/fecha1"}

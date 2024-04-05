@@ -160,14 +160,14 @@ tr {
 } */
 
 .podioGeneralMujeres:nth-child(1) {
-  background: rgb(196, 1, 196);
+  background: rgb(166, 0, 255);
 }
 
 .podioGeneralMujeres:nth-child(2) {
-  background: purple;
+  background: rgb(120, 0, 185);
 }
 .podioGeneralMujeres:nth-child(3) {
-  background: rgb(80, 0, 80);
+  background: rgb(82, 0, 127);
 }
 
 /*COLORES PODIO FECHA*/
@@ -214,14 +214,13 @@ tr {
 }
 
 .mujeres-trophy {
-  background: rgb(196, 1, 196);
+  background: rgb(166, 0, 255);
   pointer-events: none;
   top: -10px;
   right: 6px;
 }
 .bgGreta {
-  background: rgb(196, 1, 196);
-  left: 38px;
+  background: rgb(166, 0, 255);
 }
 
 .hombres-trophy {
@@ -232,11 +231,11 @@ tr {
 }
 .bgBryan {
   background: blue;
-  left: 38px;
 }
 
 .bgFechas {
-  background: blue;
+  background: #a5f3fc;
+  color: #1e293b;
 }
 
 /* @media screen and (min-width: 100px) {
@@ -249,6 +248,14 @@ tr {
   box-shadow: 1.5px 1.5px 4px 0.5px rgba(0, 0, 0, 0.459);
 }
 
+.pInicio p,
+.pInicio li {
+  color: #929191;
+}
+.pInicio small {
+  color: #929191;
+}
+
 @media screen and (min-width: 600px) {
   Table {
     max-width: 52rem;
@@ -259,8 +266,30 @@ tr {
   tbody {
     font-size: 1rem;
   }
+  .pInicio p,
+  .pInicio li {
+    font-size: 1.2rem;
+    color: #929191;
+  }
+  .pInicio small {
+    color: #929191;
+  }
+  .categoriesMenu2 a:hover {
+    background-color: #a5f3fc;
+    color: #1f2b3e;
+    border-radius: 4px;
+  }
 }
-
+@media screen and (min-width: 720px) {
+  .bgBryan {
+    background: blue;
+    left: 38px;
+  }
+  .bgGreta {
+    background: rgb(166, 0, 255);
+    left: 38px;
+  }
+}
 @media screen and (min-width: 1080px) {
   .categoriesMenu {
     height: fit-content;
@@ -285,6 +314,6 @@ tr {
   }
 
   .ulMenuMujeres li:hover {
-    background-color: purple;
+    background-color: rgb(120, 0, 185);
   }
 }

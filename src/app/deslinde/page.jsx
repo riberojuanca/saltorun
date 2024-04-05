@@ -4,7 +4,7 @@ import { TbFileDownload } from "react-icons/tb";
 
 function deslinde() {
   return (
-    <main className=" font-light p-6 text-zinc-200 flex flex-col gap-4 ms-auto me-auto max-w-4xl text-lg">
+    <main className="pInicio font-light p-6 text-zinc-200 flex flex-col gap-4 ms-auto me-auto max-w-4xl text-lg">
       <h1 className="mt-6 font-semibold text-4xl">DESLINDE</h1>
       <Link
         className="w-fit flex items-center gap-1 underline text-cyan-200 hover:brightness-110"

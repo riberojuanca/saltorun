@@ -2,7 +2,7 @@ import React from "react";
 
 function rules() {
   return (
-    <main className=" font-light p-6 text-zinc-200 flex flex-col gap-4 ms-auto me-auto max-w-4xl text-lg">
+    <main className="pInicio font-light p-6 text-zinc-200 flex flex-col gap-4 ms-auto me-auto max-w-4xl text-lg">
       <h1 className=" mt-6 font-semibold text-4xl">REGLAMENTO</h1>
       <h2 className="text-cyan-200 mt-4 font-medium text-xl">ORGANIZADORES:</h2>
       <p>
