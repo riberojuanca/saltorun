@@ -4,7 +4,7 @@ import Image from "next/image";
 function page() {
   return (
     <main className=" w-full ms-auto me-auto p-6">
-      <div className=" max-w-2xl relative ms-auto me-auto">
+      <div className=" max-w-xl relative ms-auto me-auto">
         <Image
           className=" rounded-md ms-auto me-auto"
           src={"/bryan.jpg"}
