@@ -12,7 +12,7 @@ function page() {
           width={676}
           height={676}
         ></Image>
-        <div className=" bgBryan text-white top-8 left-0 p-2 rounded-e-sm absolute ">
+        <div className=" bgBryan text-white top-4 md:top-8 left-0 p-2 rounded-e-sm absolute ">
           Bryan Ribero, ganador edición 2023
         </div>
       </div>
