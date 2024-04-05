@@ -1,7 +1,7 @@
-import GeneralMujeres from "@/app/tables/mujeres/GeneralMujeres/page";
 import { revalidateTag } from "next/cache";
 
-export async function GET() {
-  revalidateTag("csv");
-  return Response.json({ revalidated: true });
+export async function GET(request) {
+  const tag = request.nextUrl.searchParams.get("csv");
+  revalidateTag(tag);
+  return Response.json({ revalidated: true, now: Date.now() });
 }
