@@ -221,6 +221,7 @@ tr {
 }
 .bgGreta {
   background: rgb(196, 1, 196);
+  left: 38px;
 }
 
 .hombres-trophy {
@@ -231,6 +232,11 @@ tr {
 }
 .bgBryan {
   background: blue;
+  left: 38px;
+}
+
+.bgFechas {
+  background: blue;
 }
 
 /* @media screen and (min-width: 100px) {
@@ -238,6 +244,10 @@ tr {
     display: none;
   }
 } */
+
+.image {
+  box-shadow: 1.5px 1.5px 4px 0.5px rgba(0, 0, 0, 0.459);
+}
 
 @media screen and (min-width: 600px) {
   Table {
