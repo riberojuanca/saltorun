@@ -48,11 +48,11 @@ function Menu() {
                 <GiCheckeredFlag />
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/reglamento">
                 <GrStatusInfo />
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </nav>

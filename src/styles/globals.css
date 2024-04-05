@@ -138,14 +138,14 @@ tr {
 } */
 
 .podioGeneralHombres:nth-child(1) {
-  background: red;
+  background: blue;
 }
 
 .podioGeneralHombres:nth-child(2) {
-  background: rgb(147, 0, 0);
+  background: rgb(0, 0, 147);
 }
 .podioGeneralHombres:nth-child(3) {
-  background: rgb(56, 0, 0);
+  background: rgb(0, 0, 56);
 }
 
 /* .podioGeneralHombres:nth-child(1) {
@@ -221,7 +221,7 @@ tr {
 }
 
 .hombres-trophy {
-  background: red;
+  background: blue;
   pointer-events: none;
   top: -10px;
   right: 6px;

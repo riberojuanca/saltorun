@@ -129,7 +129,7 @@ export default function Home() {
         <section className="tablebg rounded-md p-2 md:p-4 mt-4 md:mt-6 flex flex-col gap-4 md:grid md:grid-cols-2 md:max-w-3xl">
           <article className=" rounded-sm p-1 flex items-center md:justify-center gap-2 ">
             <GiCheckeredFlag className="text-3xl md:text-4xl" />
-            <h3 className=" text-xl md:text-2xl font-semibold text-cyan-100">
+            <h3 className="pt-2 text-xl md:text-2xl font-semibold text-cyan-100">
               CRONOGRAMA DE FECHAS
             </h3>
           </article>

@@ -10,7 +10,7 @@ function handleClick(e) {
   for (const link of links) {
     link.style.backgroundColor = "";
   }
-  e.target.style.background = "rgb(147, 0, 0)";
+  e.target.style.background = "rgb(0, 0, 147)";
 }
 
 function HombresMenu() {
