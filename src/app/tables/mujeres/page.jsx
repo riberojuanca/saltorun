@@ -14,7 +14,7 @@ function page() {
           quality={100}
           priority={true}
         ></Image>
-        <div className=" bgGreta text-white top-4 md:top-8 left-0 p-2 rounded-e-sm absolute ">
+        <div className=" bgGreta text-sm md:text-lg text-white top-4 md:top-8 left-0 p-1 md:p-2 rounded-e-sm absolute ">
           Greta Rodríguez, ganadora edición 2023
         </div>
       </div>
