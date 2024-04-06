@@ -16,10 +16,25 @@ export const atkinson = Atkinson_Hyperlegible({
 });
 
 export const metadata = {
-  title: "Salto Run",
-  description: "Campeonato Salto Run 2024",
+  title: {
+    template: "Salto Run",
+    default: "Salto Run",
+    description: "Campeonato Salto Run 2024", // a default is required when creating a template
+    keywords: ["Salto Run", "Atletas Salto Uruguay"],
+  },
   icons: {
     icon: "/SaltoRunfavicon.png",
+  },
+
+  openGraph: {
+    title: "Salto Run",
+    description: "Campeonato Salto Run 2024",
+    url: "https://saltorun.vercel.app/",
+    images: {
+      url: "/og-saltorun.jpg",
+      width: "800",
+      height: "600",
+    },
   },
 };
 

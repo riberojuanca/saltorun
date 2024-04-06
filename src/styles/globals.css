@@ -272,7 +272,12 @@ tr {
     color: #929191;
   }
   .pInicio small {
-    color: #929191;
+    background: #a5f3fc18;
+    font-size: 1rem;
+  }
+
+  .pInicio h3 {
+    font-size: 1.5rem;
   }
   .categoriesMenu2 a:hover {
     background-color: #a5f3fc;

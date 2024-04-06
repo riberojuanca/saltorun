@@ -4,8 +4,19 @@ import "@/styles/globals.css";
 import FechasMenu from "@/components/FechasMenu";
 
 export const metadata = {
-  title: "Fechas | Salto Run",
-  description: "Tablas de posiciones fecha a fecha",
+  title: "Posiciones | Fechas",
+  description: "Campeonato Salto Run 2024", // a default is required when creating
+
+  openGraph: {
+    title: "Posiciones | Fechas",
+    description: "Posiciones fecha a fecha, Campeonato Salto Run 2024",
+    url: "https://saltorun.vercel.app/",
+    images: {
+      url: "/og-fechas.png",
+      width: "800",
+      height: "600",
+    },
+  },
 };
 
 export default function FechasLayout({ children }) {
