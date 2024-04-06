@@ -7,7 +7,7 @@ export const metadata = {
   title: "Posiciones | Fechas",
   description: "Campeonato Salto Run 2024", // a default is required when creating
 
-  metadataBase: new URL("https://saltorun.vercel.app/fechas"),
+  metadataBase: new URL("https://saltorun.vercel.app/"),
   openGraph: {
     title: "Posiciones | Fechas",
     description: "Posiciones fecha a fecha, Campeonato Salto Run 2024",
