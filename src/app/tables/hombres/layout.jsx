@@ -6,7 +6,7 @@ import HombresMenu from "@/components/HombresMenu";
 export const metadata = {
   title: "Posiciones Hombres",
   description: "Campeonato Salto Run 2024", // a default is required when creating
-
+  metadataBase: new URL("https://saltorun.vercel.app/tables/hombres"),
   openGraph: {
     title: "Posiciones Hombres",
     description: "General y por Categoría",

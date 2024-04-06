@@ -5,6 +5,7 @@ export const metadata = {
   title: "Posiciones Mujeres",
   description: "Campeonato Salto Run 2024", // a default is required when creating
 
+  metadataBase: new URL("https://saltorun.vercel.app/tables/mujeres"),
   openGraph: {
     title: "Posiciones Mujeres",
     description: "General y por Categoría",
