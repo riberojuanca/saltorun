@@ -25,7 +25,7 @@ export const metadata = {
   icons: {
     icon: "/SaltoRunfavicon.png",
   },
-
+  metadataBase: new URL("https://saltorun.vercel.app/tables"),
   openGraph: {
     title: "Salto Run",
     description: "Campeonato Salto Run 2024",
