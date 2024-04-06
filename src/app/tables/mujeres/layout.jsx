@@ -8,7 +8,7 @@ export const metadata = {
   openGraph: {
     title: "Posiciones Mujeres",
     description: "General y por Categoría",
-    url: "https://saltorun.vercel.app/",
+    url: "https://saltorun.vercel.app/tables/mujeres",
     images: {
       url: "/og-mujeres.png",
       width: "800",
