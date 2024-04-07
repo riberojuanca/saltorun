@@ -13,8 +13,8 @@ export const metadata = {
     url: "https://saltorun.vercel.app/tables/hombres",
     images: {
       url: "/oghombres.png",
-      width: "800",
-      height: "600",
+      width: "1080",
+      height: "900",
     },
   },
 };

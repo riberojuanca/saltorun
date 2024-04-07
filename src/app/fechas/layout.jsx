@@ -14,8 +14,8 @@ export const metadata = {
     url: "https://saltorun.vercel.app/fechas",
     images: {
       url: "/ogfechas.png",
-      width: "800",
-      height: "600",
+      width: "1080",
+      height: "900",
     },
   },
 };

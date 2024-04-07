@@ -12,8 +12,8 @@ export const metadata = {
     url: "https://saltorun.vercel.app/tables/mujeres",
     images: {
       url: "/ogmujeres.png",
-      width: "800",
-      height: "600",
+      width: "1080",
+      height: "900",
     },
   },
 };
