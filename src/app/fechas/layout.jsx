@@ -13,7 +13,7 @@ export const metadata = {
     description: "Posiciones fecha a fecha, Campeonato Salto Run 2024",
     url: "https://saltorun.vercel.app/fechas",
     images: {
-      url: "/og-fechas.png",
+      url: "/ogfechas.png",
       width: "800",
       height: "600",
     },

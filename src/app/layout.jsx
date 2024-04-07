@@ -31,7 +31,7 @@ export const metadata = {
     description: "Campeonato Salto Run 2024",
     url: "https://saltorun.vercel.app/",
     images: {
-      url: "/og-saltorun.png",
+      url: "/ogsaltorun.png",
       width: "800",
       height: "600",
     },
