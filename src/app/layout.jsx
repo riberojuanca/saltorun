@@ -34,6 +34,7 @@ export const metadata = {
       url: "/ogsaltorun.png",
       width: "1080",
       height: "900",
+      quality: 100,
     },
   },
 };

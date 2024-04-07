@@ -14,6 +14,7 @@ export const metadata = {
       url: "/ogmujeres.png",
       width: "1080",
       height: "900",
+      quality: 100,
     },
   },
 };

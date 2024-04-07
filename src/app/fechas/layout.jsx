@@ -16,6 +16,7 @@ export const metadata = {
       url: "/ogfechas.png",
       width: "1080",
       height: "900",
+      quality: 100,
     },
   },
 };

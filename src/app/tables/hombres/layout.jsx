@@ -15,6 +15,7 @@ export const metadata = {
       url: "/oghombres.png",
       width: "1080",
       height: "900",
+      quality: 100,
     },
   },
 };
