@@ -12,7 +12,7 @@ export const metadata = {
     description: "General y por Categoría",
     url: "https://saltorun.vercel.app/tables/hombres",
     images: {
-      url: "/oghombres.png",
+      url: "/ogsaltorun.png",
       width: "1080",
       height: "900",
       quality: 100,
