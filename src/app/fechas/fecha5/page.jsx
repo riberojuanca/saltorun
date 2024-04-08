@@ -84,9 +84,7 @@ async function QuintaFecha() {
           </div>
         </article>
         <Table>
-          <TableCaption>
-            Posiciones de la quinta fecha del Campeonato Salto Run 2024
-          </TableCaption>
+          <TableCaption>Fecha n°5 del Campeonato Salto Run 2024</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead></TableHead>

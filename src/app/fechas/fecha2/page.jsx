@@ -84,9 +84,7 @@ async function SegundaFecha() {
           </div>
         </article>
         <Table>
-          <TableCaption>
-            Posiciones de la segunda fecha del Campeonato Salto Run 2024
-          </TableCaption>
+          <TableCaption>Fecha n°2 del Campeonato Salto Run 2024</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead></TableHead>

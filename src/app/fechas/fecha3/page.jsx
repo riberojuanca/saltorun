@@ -84,9 +84,7 @@ async function TerceraFecha() {
           </div>
         </article>
         <Table>
-          <TableCaption>
-            Posiciones de la tercera fecha del Campeonato Salto Run 2024
-          </TableCaption>
+          <TableCaption>Fecha n°3 del Campeonato Salto Run 2024</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead></TableHead>

@@ -84,9 +84,7 @@ async function SextaFecha() {
           </div>
         </article>
         <Table>
-          <TableCaption>
-            Posiciones de la sexta fecha del Campeonato Salto Run 2024
-          </TableCaption>
+          <TableCaption>Fecha n°6 del Campeonato Salto Run 2024</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead></TableHead>

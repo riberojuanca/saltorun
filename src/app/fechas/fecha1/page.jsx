@@ -84,9 +84,7 @@ async function PrimerFecha() {
           </div>
         </article>
         <Table>
-          <TableCaption>
-            Posiciones de la primer fecha del Campeonato Salto Run 2024
-          </TableCaption>
+          <TableCaption>Fecha n°1 del Campeonato Salto Run 2024</TableCaption>
           <TableHeader>
             <TableRow>
               <TableHead></TableHead>
